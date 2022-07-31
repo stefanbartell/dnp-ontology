@@ -1,0 +1,80 @@
+﻿ENTITY,TERMS,STANDRADISED MAPPING TERM,GROUP
+Dinitrophenol,Dinitrophenol,Dinitrophenol,Weightloss
+DNP,DNP,Dinitrophenol,Weightloss
+T3,T3,Triiodthyronine,Weightloss
+Triiodthyronine,Triiodthyronine,Triiodthyronine,Weightloss
+Methasterone,Methasterone,Methasterone,Weightloss
+Glycerol,Glycerol,Glycerol,Weightloss
+Sibutramine,Sibutramine,Sibutramine,Weightloss
+Booze,Booze,Alcohol,Depressant
+EtOH,EtOH,Alcohol,Depressant
+Alcohol,Alcohol,Alcohol,Depressant
+Piperine,Piperine,Piperine,Alkaloid
+Yohimbe,Yohimbine,Yohimbe,Alkaloid
+Alpha-adrenergic antagonist,Alpha-adrenergic antagonist,Alpha-adrenergic antagonist,Alpha-adrenergic antagonist
+Beta-adrenergic antagonist,Beta-adrengenic antagonist,Beta-adrengenic antagonist,Beta-adrengenic antagonist
+Clen,Clen,Clenbuterol,Beta-adrengenic antagonist
+Clenbuterol,Clenbuterol,Clenbuterol,Beta-adrengenic antagonist
+Albuterol,Albuterol,Albuterol,Beta-adrengenic antagonist
+Tren,Tren,Trenbolone,Anabolic Steroid
+Trenbolone,Trenbolone,Trenbolone,Anabolic Steroid
+Insulin,Insulin ,Insulin,Anabolic Steroid
+IGF,IGF,Insulin-like Growth Factor,Anabolic Steroid
+Methylstenbolone,Methylstenbolone,Methylstenbolone,Anabolic Steroid
+Tst,Testosterone,Testosterone,Anabolic Steroid
+Testosterone,Testosterone,Testosterone,Anabolic Steroid
+Mesterolone,Mesterolone,Mesterolone,Anabolic Steroid
+Stanozolol,Stanozolol,Stanozolol,Anabolic Steroid
+Winny,Winny,Winstrol,Anabolic Steroid
+Masteron,Masteron,Masteron,Anabolic Steroid
+Helladrol,Helladrol,Helladrol,Anabolic Steroid
+Arimidex,Arimidex,Arimidex,Anabolic Steroid
+SARMs,SARMs,SARMs,Anabolic Steroid
+Deca,Deca,Deca Durabolin,Anabolic Steroid
+Avanar,Avanar,Avanar,Anabolic Steroid
+ECA,ECA,ECA,Stack
+Ephedrine,Ephedrine,Ephedrine,Stimulant
+Caffeine,Caffeine,Caffeine,Stimulant
+Nicotine,Nicotine,Nicotine,Stimulant
+Cocaine,Cocaine,Cocaine,Stimulant
+MDMA,MDMA,MDMA,Stimulant
+Ecstasy,Ecstasy,Ecstasy,Stimulant
+Modafinil,Modafinil,Modafinil,Stimulant
+Aspirin,Aspirin,Aspirin,Antiinflammatory 
+Vit B6,Vit B6,Vitamin B6,Vitamin
+Vitamin B6,Vitamin B6,Vitamin B6,Vitamin
+Vit B12,Vit B12,Vitamin B12,Vitamin
+Vitamin B12,Vitamin B12,Vitamin B12,Vitamin
+Vit C,Vit C,Vitamin C,Vitamin
+Vitamin C,Vitamin C,Vitamin C,Vitamin
+Vit E,Vit E,Vitamin E,Vitamin
+Vitamin E,Vitamin E,Vitamin E,Vitamin
+Pyruvate,Pyruvate,Pyruvate,Vitamin
+L-Carnitine,L-Carnitine,L-Carnitine,Aminoacid
+ALA,ALA,Alpha-Lipoic Acid,Aminoacid
+Creatine,Creatine,Creatine,Aminoacid
+Taurine,Taurine,Taurine,Aminoacid
+NAC,NAC,N-acetylcysteine,Aminoacid
+N-acetylcysteine,N-acetylcysteine,N-acetylcysteine,Aminoacid
+BCAA,BCAA,Branched-chain amino acids,Aminoacid
+Zn,Zn,Zinc,Mineral
+Zinc,Zinc,Zinc,Mineral
+Fish Oil,Fish Oil,Fish Oil,Mineral
+Magnesium,Magnesium,Magnesium,Mineral
+Potassium,Potassium,Potassium,Mineral
+Selenium,Selenium,Selenium,Mineral
+Calcium,Calcium,Calcium,Mineral
+Iron,Iron,Iron,Mineral
+ZMA,ZMA,ZMA,Mineral
+Quercetin,Quercetin,Quercetin,Mineral
+Ibutamoren,Ibutamoren,Ibutamoren,GH Secretagogue
+GH,Growth Hormone,Growth Hormone,Growth Hormone
+Growth Hormone,Growth Hormone,Growth Hormone,Growth Hormone
+Fexofenadine,Fexofenadine,Fexofenadine,Antihistamine
+Claritin,Claritin,Claritin,Antihistamine
+Diphenhydramine,Diphenhydramine,Diphenhydramine,Antihistamine
+Ketotifen,Ketotifen,Ketotifen,Antihistamine
+Exemestane,Exemestane,Exemestane,Aromatase inhibitor
+Clomiphene,Clomiphene,Clomiphene,Antiestrogenic
+Tamoxifen,Tamoxifen,Tamoxifen,Antiestrogenic
+hCG,hCG,Human chorionic gonadotropin,Antiestrogenic
