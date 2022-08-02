@@ -8,7 +8,9 @@ import os
 
 get_names = lambda ontoQuery: ' '.join(item.name for item in ontoQuery)
 
-onto = get_ontology('file://structural_derivatives_benzene.owl').load()
+filename = "structural_derivatives_benzene.owl"
+path = os.path.join('..','data','external')
+onto = get_ontology(f'file://{os.path.join(path,filename)}').load()
 
 print("Challenge Questions")
 query  = onto.phenol.is_structural_derivative_of
