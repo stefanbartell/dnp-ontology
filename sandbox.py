@@ -47,14 +47,21 @@ print("Prints nothing because OWL search looks only for explicitly declared rela
     is_structural_derivative_of, it is not declared explicitly
 """
 
+query = onto.phenol.INDIRECT_is_structural_derivative_of
+print(f'\t3.5. What compounds is phenol eventually a structural derivative of? Ans: {get_names(query)}')
+print("Prints chemical_compound benzene. shows that there is inheritance of is_structural_derivative_of")
+"""
+  prints chemical_compound benzene
+  shows that there is inheritance of is_structural_derivative_of
+"""
+
 # print(onto.phenol.get_properties())
 # doesn't work
 print("The query onto.phenol.get_properties() fails because the method assumes an Individual not a Class.")
 
 # ====== Moving on to querying the ontology using sparql ======
 
-# About the variable names:
-# I worked through these in reverse alphabetical order
+
 
 sparql_query = list(default_world.sparql("""
 SELECT (COUNT(?x) AS ?nb)
@@ -65,7 +72,7 @@ print(f'\t4. How many classes are there? Owlready: {len(list(onto.classes()))}. 
 
 query = default_world.sparql("""
     SELECT ?s
-    { ?s ?v ?o . 
+    { ?s ?v ?o .
       ?o rdfs:label 'phenol' .
       ?v rdfs:label 'is structural derivative of'}
     """) #Pay attention to single and double quotes
@@ -78,11 +85,113 @@ query = list(default_world.sparql("""
     SELECT ?s
     {
         ?s rdfs:subClassOf [owl:onProperty ?v; owl:someValuesFrom/rdfs:subClassOf* ?o]
-        ?o rdfs:label 'phenol' . 
-        ?v rdfs:label 'is structural derivative of' 
+        ?o rdfs:label 'phenol' .
+        ?v rdfs:label 'is structural derivative of'
     }
     """))
-print(f'\t\tTHIS WORKS: {[item[0].name for item in query]}')
+print(f'\t\tTHIS WORKS to print what is a structural derivative of phenol: {[item[0].name for item in query]}')
+
+
+print('How to print what phenol is a structural derivative of?')
+
+print('Selecting ?o instead of ?s')
+query = list(default_world.sparql("""
+    SELECT ?o
+    {
+        ?s rdfs:subClassOf [owl:onProperty ?v; owl:someValuesFrom/rdfs:subClassOf* ?o]
+        ?o rdfs:label 'phenol' .
+        ?v rdfs:label 'is structural derivative of'
+    }
+    """))
+print(f'\t\tThis just prints phenol four times: {[item[0].name for item in query]}')
+
+
+print('Switching s and o and selecting ?o instead of ?s')
+query = list(default_world.sparql("""
+    SELECT ?o
+    {
+        ?s rdfs:label 'phenol'
+        ?o rdfs:subClassOf [owl:onProperty ?v; owl:someValuesFrom/rdfs:subClassOf* ?o]  .
+        ?v rdfs:label 'is structural derivative of'
+    }
+    """))
+print(f'\t\tThis does not work: Prints most of the classes in the ontology. {[item[0].name for item in query]}')
+
+
+print('Switching s and o and selecting ?o instead of ?s and replacing ?o in 2nd line with ?s')
+query = list(default_world.sparql("""
+    SELECT ?o
+    {
+        ?s rdfs:label 'phenol'
+        ?o rdfs:subClassOf [owl:onProperty ?v; owl:someValuesFrom/rdfs:subClassOf* ?s]  .
+        ?v rdfs:label 'is structural derivative of'
+    }
+    """))
+print(f'\t\tThis does not work: Prints structural derivatives of phenol again {[item[0].name for item in query]}')
+
+
+print('Selecting v instead of s')
+query = list(default_world.sparql("""
+    SELECT ?v
+    {
+        ?s rdfs:subClassOf [owl:onProperty ?v; owl:someValuesFrom/rdfs:subClassOf* ?o]
+        ?o rdfs:label 'phenol' .
+        ?v rdfs:label 'is structural derivative of'
+    }
+    """))
+print(f'\t\tTHIS does not work. just prints is_structural_derivative_of 4 times: {[item[0].name for item in query]}')
+
+
+print('Switching the order of ?o and ?v syntax in ?s')
+query = list(default_world.sparql("""
+    SELECT ?s
+    {
+        ?s rdfs:subClassOf [owl:someValuesFrom/rdfs:subClassOf* ?o; owl:onProperty ?v]
+        ?o rdfs:label 'phenol' .
+        ?v rdfs:label 'is structural derivative of'
+    }
+    """))
+print(f'\t\tThis does not work: Prints structural derivatives of phenol again {[item[0].name for item in query]}')
+
+
+print('Switching ?o and ?v in the ?s line')
+query = list(default_world.sparql("""
+    SELECT ?s
+    {
+        ?s rdfs:subClassOf [owl:onProperty ?o; owl:someValuesFrom/rdfs:subClassOf* ?v]
+        ?o rdfs:label 'phenol' .
+        ?v rdfs:label 'is structural derivative of'
+    }
+    """))
+print(f'\t\tTHIS does not work. Prints the empty list: {[item[0].name for item in query]}')
+
+
+print('Switching "is structural derivative of" to "has structural derivative"')
+query = list(default_world.sparql("""
+    SELECT ?s
+    {
+        ?s rdfs:subClassOf [owl:onProperty ?v; owl:someValuesFrom/rdfs:subClassOf* ?o]
+        ?o rdfs:label 'phenol' .
+        ?v rdfs:label 'has structural derivative'
+    }
+    """))
+print(f'\t\tDoes not work. prints the empty list: {[item[0].name for item in query]}')
+
+
+print('Switching o and v')
+query = list(default_world.sparql("""
+    SELECT ?s
+    {
+        ?s rdfs:subClassOf [owl:onProperty ?v; owl:someValuesFrom/rdfs:subClassOf* ?o]
+        ?o rdfs:label 'is structural derivative of'  .
+        ?v rdfs:label 'phenol'
+    }
+    """))
+print(f'\t\tTHIS does not work. Prints the empty list. {[item[0].name for item in query]}')
+
+
+# About the variable names:
+# I worked through these in reverse alphabetical order
 
 # c = list(default_world.sparql("""
 # SELECT ?s WHERE { is_structural_derivative_of ?v "phenol" }"""))
