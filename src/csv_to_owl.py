@@ -1,15 +1,18 @@
-import pandas as pd
-from owlready2 import *
-import types
+import types, os 
 
-kb_dnp_sub = pd.read_csv('kb_dnp_sub.csv')
+import pandas as pd
+
+from owlready2 import *
+
+kb_dnp_sub = pd.read_csv(os.path.join('..','data','external','kb_dnp_sub.csv'))
 
 groups = list(set(kb_dnp_sub.loc[:,"GROUP"]))
 
-def lowerplusgroup(str):
-    str = str.lower().replace(" ", "_").replace("-", "_")
-    str = str+"_group"
-    return str
+def lowerplusgroup(aStr):
+    #Don't shadow reserved keywords (like str). It can have unintended consequences
+    aStr = aStr.lower().replace(" ", "_").replace("-", "_")
+    aStr = f'{aStr}_group'
+    return aStr
 
 groups = sorted(list(map(lowerplusgroup, groups)))
 
