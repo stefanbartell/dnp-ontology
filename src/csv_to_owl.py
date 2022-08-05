@@ -140,23 +140,23 @@ for group in groups_original:
 
 # from https://owlready2.readthedocs.io/en/latest/properties.html
 # code works
-with onto:
-    class Drug(Thing):
-        pass
-    class Ingredient(Thing):
-        pass
-    class has_for_ingredient(ObjectProperty):
-        domain = [Drug]
-        range = [Ingredient]
-
-with onto:
-    class has_for_ingredient(Drug >> Ingredient):
-        pass
-my_drug = Drug("my_drug")
-
-acetaminophen = Ingredient("acetaminophen")
-
-my_drug.has_for_ingredient = [acetaminophen]
+# with onto:
+#     class Drug(Thing):
+#         pass
+#     class Ingredient(Thing):
+#         pass
+#     class has_for_ingredient(ObjectProperty):
+#         domain = [Drug]
+#         range = [Ingredient]
+#
+# with onto:
+#     class has_for_ingredient(Drug >> Ingredient):
+#         pass
+# my_drug = Drug("my_drug")
+#
+# acetaminophen = Ingredient("acetaminophen")
+#
+# my_drug.has_for_ingredient = [acetaminophen]
 
 # =========
 
@@ -173,23 +173,90 @@ onto.chemical_compound.is_instance_of = [continuant]
 #     class is_instance_of(onto.continuant >> onto.alkaloid_group):
 #         pass
 
-# need to reproduce onto.alkaloid_group.is_instance_of = [onto.continuant]
-onto.alkaloid_group.is_instance_of = [onto.chemical_compound]
+# need to reproduce onto.alkaloid_group.is_instance_of = [onto.chemical_compound]
+# onto.alkaloid_group.is_instance_of = [onto.chemical_compound]
 
-# eval("onto.alkaloid_group.is_instance_of") = [onto.continuant]
+# exec("onto.alkaloid_group.is_instance_of = [onto.chemical_compound]")
+# works
+
+# eval("onto.alkaloid_group.is_instance_of") = [onto.chemical_compound]
 # SyntaxError: can't assign to function call
 
-# "onto.alkaloid_group.is_instance_of" = [onto.continuant]
+# [onto.chemical_compound] = eval("onto.alkaloid_group.is_instance_of")
+# TypeError: cannot unpack non-iterable property object
+
+# "onto.alkaloid_group.is_instance_of" = [onto.chemical_compound]
 # SyntaxError: can't assign to literal
 
-name = eval("onto.alkaloid_group.is_instance_of")
-name = [onto.continuant]
-# doesn't work
+# [onto.chemical_compound] = "onto.alkaloid_group.is_instance_of"
+# ValueError: too many values to unpack (expected 1)
 
+# name = eval("onto.alkaloid_group.is_instance_of")
+# name = [onto.chemical_compound]
+# code runs but doesn't work
+
+# name = eval("onto.alkaloid_group.is_instance_of")
+# [onto.chemical_compound] = name
+# TypeError: cannot unpack non-iterable property object
+
+# name = eval("onto.alkaloid_group.is_instance_of")
+# name = [chemical_compound]
+# code runs but doesn't work
+
+# name = eval("onto.alkaloid_group.is_instance_of")
+# [chemical_compound] = name
+# TypeError: cannot unpack non-iterable property object
 
 for group in groups:
-    name = eval("onto."+group+".is_instance_of")
-    name = [onto.continuant]
-# doesn't work
+    exec("onto."+group+".is_instance_of = [onto.chemical_compound]")
+
+# for group in groups:
+#     name = eval("onto."+group+".is_instance_of")
+#     name = [onto.chemical_compound]
+# code runs but doesn't work
+
+for group in groups_original:
+    standardised_mapping_term = sorted(list(set(kb_dnp_sub.loc[kb_dnp_sub['GROUP'] == group, 'STANDRADISED MAPPING TERM'])))
+    for term1 in standardised_mapping_term:
+        name1 = "onto."+lowerplusgroup(group)
+        term11 = "onto."+lowerplussmt(term1)
+        exec(term11 + ".is_instance_of = [" + name1 + "]")
+        terms = sorted(list(set(kb_dnp_sub.loc[kb_dnp_sub['STANDRADISED MAPPING TERM'] == term1, 'TERMS'])))
+        for term2 in terms:
+            name2 = "onto."+lowerplussmt(term1)
+            term21 = "onto."+lowerplusterm(term2)
+            exec(term21 + ".is_instance_of = [" + name2 + "]")
+            entities = sorted(list(set(kb_dnp_sub.loc[kb_dnp_sub['TERMS'] == term2, 'ENTITY'])))
+            for entity in entities:
+                name3 = "onto."+lowerplusterm(term2)
+                entity2 = "onto."+lowerplusentity(entity)
+                exec(entity2 + ".is_instance_of = [" + name3 + "]")
+
+# print(list(onto.classes()))
+
+def unsuffix(astr):
+    astr = astr.replace('_group', '').replace('_standardised_mapping_term', '')
+    astr = astr.replace('_term', '').replace('_entity', '')
+    return(astr)
+
+def unprefix(astr):
+    astr = astr.replace('onto.','')
+    return(astr)
+
+import requests as rq
+from bs4 import BeautifulSoup
+
+for clss in list(onto.classes())[0:1]:
+    term = unprefix(unsuffix(str(clss))).replace('_', '-')
+    print(term)
+
+    url = "https://www.dictionary.com/browse/"+term
+    req = rq.get(url)
+    soup = BeautifulSoup(req.content, 'html.parser')
+    html = str(soup)
+    print(html)
+    # print(soup.prettify())
+
+    # exec()
 
 onto.save(file = "kb_dnp_sub2.owl")
