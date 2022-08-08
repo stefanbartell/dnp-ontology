@@ -1,4 +1,4 @@
-TEXTUAL MENTION,STANDARDIZED TEXTUAL LABEL,STANDRADISED MAPPING TERM,GROUP
+TEXTUAL MENTION,STANDARDIZED TEXTUAL LABEL,STANDARDIZED MAPPING TERM,GROUP
 Dinitrophenol,Dinitrophenol,Dinitrophenol,Weightloss
 DNP,DNP,Dinitrophenol,Weightloss
 T3,T3,Triiodthyronine,Weightloss
@@ -33,15 +33,15 @@ Arimidex,Arimidex,Anastrazole,Anabolic Steroid
 SARMs,SARMs,Selective Androgen Receptor Modulator,Selective Androgen Receptor Modulator
 Deca,Deca Durabolin,Nandrolone,Anabolic Steroid
 Avanar,Avanar,Oxandrolone,Anabolic Steroid
-ECA,ECA,Ephedrine|Caffeine|Aspirin,Stack
+ECA,ECA,Ephedrine-Caffeine-Aspirin,Stack
 Ephedrine,Ephedrine,Ephedrine,Stimulant
 Caffeine,Caffeine,Caffeine,Stimulant
 Nicotine,Nicotine,Nicotine,Stimulant
 Cocaine,Cocaine,Cocaine,Stimulant
-MDMA,MDMA,3,4-Methylenedioxymethamphetamine,Phenethylamine Derivative
-Ecstasy,Ecstasy,3,4-Methylenedioxymethamphetamine,Phenethylamine Derivative
+MDMA,MDMA,Three-Four-Methylenedioxymethamphetamine,Phenethylamine Derivative
+Ecstasy,Ecstasy,Three-Four-Methylenedioxymethamphetamine,Phenethylamine Derivative
 Modafinil,Modafinil,Modafinil,Stimulant
-Aspirin,Aspirin,Aspirin,Anti-inflammatory 
+Aspirin,Aspirin,Aspirin,Anti-inflammatory
 Vit B6,Vit B6,Vitamin B6,Vitamin
 Vitamin B6,Vitamin B6,Vitamin B6,Vitamin
 Vit B12,Vit B12,Vitamin B12,Vitamin
@@ -56,7 +56,7 @@ ALA,ALA,Alpha-Lipoic Acid,Amino acid
 Creatine,Creatine,Creatine,Amino acid
 Taurine,Taurine,Taurine,Amino acid
 NAC,NAC,N-acetylcysteine,Amino acid
-N-acetylcysteine,N-acetylcysteine,N-acetylcysteine,Aminoacid
+N-acetylcysteine,N-acetylcysteine,N-acetylcysteine,Amino acid
 BCAA,BCAA,Branched-chain amino acid,Amino acid
 Zn,Zn,Zinc,Mineral
 Zinc,Zinc,Zinc,Mineral
@@ -66,7 +66,7 @@ Potassium,Potassium,Potassium,Mineral
 Selenium,Selenium,Selenium,Mineral
 Calcium,Calcium,Calcium,Mineral
 Iron,Iron,Iron,Mineral
-ZMA,ZMA,Zinc|Magnesium|Aspartate,Stack
+ZMA,ZMA,Zinc-Magnesium-Aspartate,Stack
 Quercetin,Quercetin,Quercetin,Flavonoid
 Ibutamoren,Ibutamoren,Ibutamoren,Growth Hormone Secretagogue
 GH,Growth Hormone,Growth Hormone,Growth Hormone
