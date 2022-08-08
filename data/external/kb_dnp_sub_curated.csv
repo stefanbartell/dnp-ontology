@@ -1,4 +1,4 @@
-TEXTUAL MENTION,STANDARDIZED TEXTUAL LABEL,STANDRADISED MAPPING TERM,GROUP
+TEXTUAL MENTION,STANDARDIZED TEXTUAL LABEL,STANDARDIZED MAPPING TERM,GROUP
 Dinitrophenol,Dinitrophenol,Dinitrophenol,Weightloss
 DNP,DNP,Dinitrophenol,Weightloss
 T3,T3,Triiodthyronine,Weightloss
@@ -41,7 +41,7 @@ Cocaine,Cocaine,Cocaine,Stimulant
 MDMA,MDMA,3,4-Methylenedioxymethamphetamine,Phenethylamine Derivative
 Ecstasy,Ecstasy,3,4-Methylenedioxymethamphetamine,Phenethylamine Derivative
 Modafinil,Modafinil,Modafinil,Stimulant
-Aspirin,Aspirin,Aspirin,Anti-inflammatory 
+Aspirin,Aspirin,Aspirin,Anti-inflammatory
 Vit B6,Vit B6,Vitamin B6,Vitamin
 Vitamin B6,Vitamin B6,Vitamin B6,Vitamin
 Vit B12,Vit B12,Vitamin B12,Vitamin
