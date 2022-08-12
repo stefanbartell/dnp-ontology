@@ -16,6 +16,36 @@ print("Challenge Questions")
 query  = onto.phenol.is_structural_derivative_of
 print(f'\t1. What compound is phenol a direct structural derivative of? Ans:{get_names(query)}')
 
+challenge_qs = [{
+    @type: challenge-question
+    @label: "What compuonds is phenol a direct...."
+    @expression: "onto.phenol.is_structural_derivative_of"
+    @true_answer: ["benzene"]
+    @true_answer_type: "object" | "relation"
+},
+{}]
+
+#JSON-LD format
+
+for challenge_q in challenge_qs:
+    performance = exec("get_names(challenge_q[@expression])")
+    #["benzene","toluene"]
+    challenge_q[@performance] = (performance == challenge_q[@true_answer]) if challenge[@true_answer_type]=="object" else (performance % challenge_q[@true_answer])
+
+for num in load(data):
+    num += 1 
+
+for num in [1,2,3]:
+    num += 1
+
+query = 1
+print query +=1
+
+query = 2
+print query +=1 
+
+
+
 # print(list(onto.properties()))
 # prints a list of properties in the ontology
 
