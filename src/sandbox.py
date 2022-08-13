@@ -9,12 +9,62 @@ import os
 get_names = lambda ontoQuery: ' '.join(item.name for item in ontoQuery)
 
 filename = "structural_derivatives_benzene.owl"
-path = os.path.join('..','data','external')
+path = os.path.join('..','data','external', 'ontologies')
 onto = get_ontology(f'file://{os.path.join(path,filename)}').load()
 
 print("Challenge Questions")
 query  = onto.phenol.is_structural_derivative_of
-print(f'\t1. What compound is phenol a direct structural derivative of? Ans:{get_names(query)}')
+print(f'\t1. What substance is phenol a direct structural derivative of? Ans:{get_names(query)}')
+
+challenge_qs = [{
+    "type": "challenge-question",
+    "label": "What substances is phenol a direct structural derivative of?",
+    "expression": onto.phenol.is_structural_derivative_of,
+    "true_answer": ["benzene"],
+    "true_answer_type": "object" or "relation"
+},
+
+{
+
+"type": "challenge-question",
+"label": "What substances is phenol a direct and indirect structural derivative of?",
+"expression": onto.phenol.INDIRECT_is_structural_derivative_of,
+"true_answer": ["benzene", "chemical_substance"],
+"true_answer_type": "object" or "relation"
+
+}
+# the one below generates errors
+# {
+#
+# "type": "challenge-question",
+# "label": "What substances is phenol an instance of?"a,
+# "expression": onto.phenol.is_a,
+# "true_answer": ["benzene", "is_structural_derivative_of.some(benzene)", "has_part.min(1, hydroxyl_group)"],
+# "true_answer_type": "object" or "relation"
+#
+# }
+]
+
+#JSON-LD format
+
+for challenge_q in challenge_qs:
+    performance = get_names(challenge_q["expression"])
+    #["benzene","toluene"]
+    challenge_q["performance"] = (performance == challenge_q["true_answer"]) if challenge_q["true_answer_type"]=="object" else (performance % challenge_q["true_answer"])
+
+# for num in load(data):
+#     num += 1
+#
+# for num in [1,2,3]:
+#     num += 1
+
+# query = 1
+# print query +=1
+#
+# query = 2
+# print query +=1
+
+
 
 # print(list(onto.properties()))
 # prints a list of properties in the ontology
@@ -24,24 +74,24 @@ print(f'\t2. What phenols does the ontology specify? Ans:{get_names(query)}')
 
 query = onto.phenol.is_a
 print(list(onto.phenol.is_a))
-print("This didn't print chemical_compound, because this is not asserted in the ontology.")
+print("This didn't print chemical_substance, because this is not asserted in the ontology.")
 """ prints
     benzene, is_structural_derivative_of.some(benzene),
     has_part.min(1, hydroxyl_group)
-    but doesn't print chemical_compound
+    but doesn't print chemical_substance
 """
 
 # print(list(onto.phenol.ancestors()))
-# prints benzene, chemical_compound, owl.Thing, phenol, continuant
+# prints benzene, chemical_substance, owl.Thing, phenol, continuant
 
 # print(onto.phenol.INDIRECT_is_structural_derivative_of)
-# prints chemical_compound, benzene, which is what we want
+# prints chemical_substance, benzene, which is what we want
 # shows that there is inheritance of is_strucural_derivative_of
 # I think this is what it captures in SparQL:
 # phenol is_structural_derivative_of some ?x
 
 query = onto.phenol.INDIRECT_has_structural_derivative
-print(f'\t3. What compounds eventually have phenol as a structural derivative? Ans: {get_names(query)}')
+print(f'\t3. What substances eventually have phenol as a structural derivative? Ans: {get_names(query)}')
 print("Prints nothing because OWL search looks only for explicitly declared relationships. It performs no reasoning.")
 """
   prints nothing
@@ -50,16 +100,16 @@ print("Prints nothing because OWL search looks only for explicitly declared rela
 """
 
 query = onto.phenol.INDIRECT_is_structural_derivative_of
-print(f'\t3.5. What compounds is phenol eventually a structural derivative of? Ans: {get_names(query)}')
-print("Prints chemical_compound benzene. shows that there is inheritance of is_structural_derivative_of")
+print(f'\t3.5. What substances is phenol eventually a structural derivative of? Ans: {get_names(query)}')
+print("Prints chemical_substance benzene. shows that there is inheritance of is_structural_derivative_of")
 """
-  prints chemical_compound benzene
+  prints chemical_substance benzene
   shows that there is inheritance of is_structural_derivative_of
 """
 
 # print(onto.phenol.get_properties())
 # doesn't work
-print("The query onto.phenol.get_properties() fails because the method assumes an Individual not a Class.")
+print("The query onto.phenol.get_properties() fails because the method assumes an Individual, not a Class.")
 
 # ====== Moving on to querying the ontology using sparql ======
 
@@ -191,6 +241,8 @@ query = list(default_world.sparql("""
     """))
 print(f'\t\tTHIS does not work. Prints the empty list. {[item[0].name for item in query]}')
 
+# ================================
+
 
 # About the variable names:
 # I worked through these in reverse alphabetical order
@@ -245,10 +297,10 @@ print(f'\t\tTHIS does not work. Prints the empty list. {[item[0].name for item i
 
 # j = list(default_world.sparql("""
 # SELECT ?x
-# { ?x rdfs:label "chemical compound" . }
+# { ?x rdfs:label "chemical substance" . }
 # """))
 # print(j)
-# prints chemical compound
+# prints chemical substance
 
 # k = list(default_world.sparql("""
 # SELECT ?x
