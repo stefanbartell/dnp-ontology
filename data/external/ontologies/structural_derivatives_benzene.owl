@@ -24,7 +24,7 @@
     <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_compound"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#functional_group"/>
         <rdfs:comment>x has part y in a chemical sense when y is a molecule or functional group that is bonded to the molecule x or is a substituent of x</rdfs:comment>
         <rdfs:label>has part</rdfs:label>
@@ -36,8 +36,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_structural_derivative">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_compound"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_compound"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
         <rdfs:comment></rdfs:comment>
         <rdfs:comment>x has structural derivative y in a chemical sense when y is a molecule that results from adding substituents to molecule x</rdfs:comment>
         <rdfs:label>has structural derivative</rdfs:label>
@@ -48,8 +48,8 @@
     <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_compound"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_compound"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
         <rdfs:comment>x is a structural derivative y in a chemical sense when x is a molecule that results from adding substituents to molecule y</rdfs:comment>
         <rdfs:label>is structural derivative of</rdfs:label>
     </owl:ObjectProperty>
@@ -70,11 +70,11 @@
     <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#benzene -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#benzene">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_compound"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_compound"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -90,11 +90,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_compound -->
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_compound">
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#continuant"/>
-        <rdfs:comment>A chemical compound is a collection of atoms that are bonded together in a certain configuration; a molecule</rdfs:comment>
+        <rdfs:comment>A chemical substance is a collection of one or more atoms that are bonded together (if there are multiple atoms) in a certain configuration; an atom or  molecule</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical compound</rdfs:label>
     </owl:Class>
     
@@ -396,3 +396,4 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
