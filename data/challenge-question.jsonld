@@ -9,7 +9,7 @@
     "true_answer_type": "object"
 },
 {
-    "@type": "challenge-question",
+    "@type": "challenge question",
     "label": "What chemical substances is phenol a direct and indirect structural derivative of?",
     "expression": "onto.phenol.INDIRECT_is_structural_derivative_of",
     "true_answer": ["benzene", "chemical_substance"],
