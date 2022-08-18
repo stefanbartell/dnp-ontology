@@ -5,22 +5,8 @@ import pandas as pd
 from owlready2 import *
 from pyld import jsonld
 
-#It would be interesting to write an alternate solution that uses recursion
-def get_names(ontoQuery):
-	if all([type(item)==type(Thing) for item in ontoQuery]):
-		return [item.name for item in ontoQuery]
-	else: 
-		ans = []
-		for item in ontoQuery:
-			if type(item) == type(Thing):
-				ans += [item.name]
-			elif type(item) == class_construct.Restriction:
-				print(item.equivalent_to, type(item))
-				ans += ["Bort"]
-			else:
-				ans += [f'Type Unknown:{type(item)}']
-		return ans
 
+get_names = lambda ontoQuery: [item.name if type(item)==type(Thing) else str(item) for item in ontoQuery]
 
 data = os.path.join('..','data')
 filename = {"ontology":os.path.join(data,'external','ontologies',"structural_derivatives_benzene.owl"),
