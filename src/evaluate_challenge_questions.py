@@ -1,5 +1,5 @@
-import os, json 
 
+import os, json 
 import pandas as pd
 
 from owlready2 import *
@@ -21,6 +21,7 @@ def get_names(ontoQuery):
 				ans += [f'Type Unknown:{type(item)}']
 		return ans
 
+
 data = os.path.join('..','data')
 filename = {"ontology":os.path.join(data,'external','ontologies',"structural_derivatives_benzene.owl"),
 			"challenge_questions":os.path.join(data,"challenge-question.jsonld")}
@@ -38,6 +39,14 @@ for cq in jld["doc"]:
 	performance = get_names(eval(cq["expression"]))
 	print(f'Generated answer: {set(performance)}. Expected: {set(cq["true_answer"])}')
 	print(set(cq["true_answer"]) == set(performance))
+	# if cq["@type"] != "chemical_substance":
+	# 	# performance = get_names(eval(cq["expression"])) # issues
+	# 	performance = get_names(eval(cq["expression"])) # issues
+	# else:
+	# 	performance = "N/A"
+	# print(f'Generated answer: {set(performance.split())}. Expected: {set(cq["true_answer"])}')
+	# print(set(cq["true_answer"]) == set(performance.split()))
+
 
 	#How to handle expressions?
 	#How to store performance results?
