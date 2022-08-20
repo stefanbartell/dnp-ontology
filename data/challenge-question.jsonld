@@ -1,18 +1,23 @@
 {"context":{
-   "label":{"@id":"http://schema.org/label","@type":"xsd:string"}
+   "label":{"@id":"http://schema.org/label","@type":"xsd:string"} 
 },
 "doc":[{
     "@type": "challenge question",
-    "label": "What chemical substances is phenol a direct structural derivative of?",
+    "label": "What compuonds is phenol a direct structural derivative of?",
     "expression": "onto.phenol.is_structural_derivative_of",
     "true_answer": ["benzene"],
-    "true_answer_type": "object"
+    "true_answer_type": "object" 
 },
 {
-    "@type": "challenge question",
+    "@type": "challenge-question",
     "label": "What chemical substances is phenol a direct and indirect structural derivative of?",
     "expression": "onto.phenol.INDIRECT_is_structural_derivative_of",
-    "true_answer": ["benzene", "chemical_substance"],
-    "true_answer_type": "object"
-}
-]}
+    "true_answer": ["benzene", "chemical_substance"]
+},
+{
+    "@type": "challenge-question",
+    "label": "What substances is phenol an instance of?",
+    "expression": "onto.phenol.is_a",
+    "true_answer": ["benzene", "is_structural_derivative_of.some(benzene)", "has_part.min(1, hydroxyl_group)"],
+    "true_answer_type": "object" 
+}]}

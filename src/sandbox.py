@@ -16,34 +16,6 @@ print("Challenge Questions")
 query  = onto.phenol.is_structural_derivative_of
 print(f'\t1. What substance is phenol a direct structural derivative of? Ans:{get_names(query)}')
 
-challenge_qs = [{
-    "type": "challenge-question",
-    "label": "What substances is phenol a direct structural derivative of?",
-    "expression": onto.phenol.is_structural_derivative_of,
-    "true_answer": ["benzene"],
-    "true_answer_type": "object" or "relation"
-},
-
-{
-
-"type": "challenge-question",
-"label": "What substances is phenol a direct and indirect structural derivative of?",
-"expression": onto.phenol.INDIRECT_is_structural_derivative_of,
-"true_answer": ["benzene", "chemical_substance"],
-"true_answer_type": "object" or "relation"
-
-}
-# the one below generates errors
-# {
-#
-# "type": "challenge-question",
-# "label": "What substances is phenol an instance of?"a,
-# "expression": onto.phenol.is_a,
-# "true_answer": ["benzene", "is_structural_derivative_of.some(benzene)", "has_part.min(1, hydroxyl_group)"],
-# "true_answer_type": "object" or "relation"
-#
-# }
-]
 
 #JSON-LD format
 
@@ -52,17 +24,34 @@ for challenge_q in challenge_qs:
     #["benzene","toluene"]
     challenge_q["performance"] = (performance == challenge_q["true_answer"]) if challenge_q["true_answer_type"]=="object" else (performance % challenge_q["true_answer"])
 
-# for num in load(data):
-#     num += 1
-#
-# for num in [1,2,3]:
-#     num += 1
 
-# query = 1
-# print query +=1
-#
-# query = 2
-# print query +=1
+challenge_qs = [{
+    @type: challenge-question
+    @label: "What compuonds is phenol a direct...."
+    @expression: "onto.phenol.is_structural_derivative_of"
+    @true_answer: ["benzene"]
+    @true_answer_type: "object" | "relation"
+},
+{}]
+
+#JSON-LD format
+
+for challenge_q in challenge_qs:
+    performance = exec("get_names(challenge_q[@expression])")
+    #["benzene","toluene"]
+    challenge_q[@performance] = (performance == challenge_q[@true_answer]) if challenge[@true_answer_type]=="object" else (performance % challenge_q[@true_answer])
+
+for num in load(data):
+    num += 1 
+
+for num in [1,2,3]:
+    num += 1
+
+query = 1
+print query +=1
+
+query = 2
+print query +=1 
 
 
 

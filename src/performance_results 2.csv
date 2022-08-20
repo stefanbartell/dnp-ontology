@@ -1,0 +1,3 @@
+,Challenge Question,Expected Answer,Generated Answer,Correct?
+0,What chemical substances is phenol a direct structural derivative of?,{'benzene'},{'benzene'},1
+1,What chemical substances is phenol a direct and indirect structural derivative of?,"{'chemical_substance', 'benzene'}","{'chemical_substance', 'benzene'}",1

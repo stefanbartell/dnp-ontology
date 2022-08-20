@@ -1,0 +1,8 @@
+,
+{
+    "@type": "challenge-question",
+    "label": "What substances is phenol an instance of?",
+    "expression": "onto.phenol.is_a",
+    "true_answer": ["benzene", "is_structural_derivative_of.some(benzene)", "has_part.min(1, hydroxyl_group)"],
+    "true_answer_type": "object" 
+}
