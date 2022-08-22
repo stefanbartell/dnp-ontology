@@ -25,6 +25,9 @@ for cq in jld["doc"]:
 	performance = get_names(eval(cq["expression"]))
 	print(f'Generated answer: {set(performance)}. Expected: {set(cq["true_answer"])}')
 	print(set(cq["true_answer"]) == set(performance))
+	# payload['Correct?'] = set(cq["true_answer"]) == set(performance)
+	# How to capture Indeterminate? 
+
 	# if cq["@type"] != "chemical_substance":
 	# 	# performance = get_names(eval(cq["expression"])) # issues
 	# 	performance = get_names(eval(cq["expression"])) # issues
@@ -33,8 +36,6 @@ for cq in jld["doc"]:
 	# print(f'Generated answer: {set(performance.split())}. Expected: {set(cq["true_answer"])}')
 	# print(set(cq["true_answer"]) == set(performance.split()))
 
-
-	#How to handle expressions?
 	#How to store performance results?
 
 # columns1 = ["Challenge Question", "Expected Answer", "Generated Answer", "Correct?"]
