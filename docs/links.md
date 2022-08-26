@@ -1,4 +1,6 @@
-The Missing Semester of Your CS Education https://missing.csail.mit.edu/
+### Videos I watched to learn about Spacy. 
+
+- [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 
 Spacy main page https://spacy.io/
 
@@ -12,9 +14,7 @@ Natural Language Processing with spaCy & Python - Course for Beginners https://w
 
 How to Use spaCy's EntityRuler (Named Entity Recognition for DH 04 | Part 01) https://www.youtube.com/watch?v=wpyCzodvO3A
 
-Week 11: Clinical NLP Notebook #1 - Intro to spaCy https://www.youtube.com/watch?v=wsAJpTyE6OY
-
-Week 11: Clinical NLP Notebook #2 - Pattern Matching with medspaCy https://www.youtube.com/watch?v=ymON0qXbbdw
+Clinical NLP Notebook [#1: Intro to SpaCy](https://www.youtube.com/watch?v=wsAJpTyE6OY), [#2:Pattern Matching with medspaCy](https://www.youtube.com/watch?v=ymON0qXbbdw)
 
 Week 11: Clinical NLP Notebook #3: Statistical NLP https://www.youtube.com/watch?v=kKqesjURq60
 
@@ -36,7 +36,8 @@ Medical natural language processing https://www.youtube.com/watch?v=oyhpIWa9w1Y
 
 Mark Neumann: ScispaCy: A spaCy pipeline & models for scientific & biomedical text (spaCy IRL 2019) https://www.youtube.com/watch?v=2_HSKDALwuw
 
-New Protégé Pizza Tutorial https://www.michaeldebellis.com/post/new-protege-pizza-tutorial
+#### Protégé
+- [New Protégé Pizza Tutorial](https://www.michaeldebellis.com/post/new-protege-pizza-tutorial)
 
 Protege Tutorial - exercise 1 to 15 https://www.youtube.com/watch?v=1wVeD2PutOA
 
