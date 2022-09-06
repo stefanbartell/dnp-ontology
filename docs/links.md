@@ -1,26 +1,22 @@
-### Videos I watched to learn about Spacy. 
+#### General CS
 
 - [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 
-Spacy main page https://spacy.io/
+#### Spacy. 
+- [Main page](https://spacy.io/)
+- [spaCy 101: Everything you need to know](https://spacy.io/usage/spacy-101)
+- [Advanced NLP with spaCy: a free online course](https://course.spacy.io/en/)
+- [INTRODUCTION TO SPACY 3: A Free Course for Beginners](http://spacy.pythonhumanities.com/intro.html)
+- [Natural Language Processing with spaCy & Python - Course for Beginners](https://www.youtube.com/watch?v=dIUTsFT2MeQ)
+- [How to Use spaCy's EntityRuler (Named Entity Recognition for DH 04 | Part 01)](https://www.youtube.com/watch?v=wpyCzodvO3A)
 
-spaCy 101: Everything you need to know https://spacy.io/usage/spacy-101
-
-Advanced NLP with spaCy: a free online course https://course.spacy.io/en/
-
-INTRODUCTION TO SPACY 3: A Free Course for Beginners http://spacy.pythonhumanities.com/intro.html
-
-Natural Language Processing with spaCy & Python - Course for Beginners https://www.youtube.com/watch?v=dIUTsFT2MeQ
-
-How to Use spaCy's EntityRuler (Named Entity Recognition for DH 04 | Part 01) https://www.youtube.com/watch?v=wpyCzodvO3A
-
-Clinical NLP Notebook [#1: Intro to SpaCy](https://www.youtube.com/watch?v=wsAJpTyE6OY), [#2:Pattern Matching with medspaCy](https://www.youtube.com/watch?v=ymON0qXbbdw)
-
-Week 11: Clinical NLP Notebook #3: Statistical NLP https://www.youtube.com/watch?v=kKqesjURq60
-
-Week 11: Clinical NLP Notebook #4: Concept Negation with ConText https://www.youtube.com/watch?v=-YxyxE4qP4E
-
-Week 11: Clinical NLP Homework - Clinical Information Extraction https://www.youtube.com/watch?v=EVLPi777wW4
+#### Applying NLP to Clinical Text
+##### Clinical NLP Notebook 
+1. [Intro to SpaCy](https://www.youtube.com/watch?v=wsAJpTyE6OY)
+2. [#2:Pattern Matching with medspaCy](https://www.youtube.com/watch?v=ymON0qXbbdw)
+3. [Statistical NLP](https://www.youtube.com/watch?v=kKqesjURq60)
+4. [Concept Negation with ConText](https://www.youtube.com/watch?v=-YxyxE4qP4E)
+5. [Clinical Information Extraction](https://www.youtube.com/watch?v=EVLPi777wW4)
 
 Tutorial on Entity Linking (Speaker: Laura Dietz) https://www.youtube.com/watch?v=CBvE3BNErgE
 
