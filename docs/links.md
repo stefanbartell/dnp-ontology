@@ -18,11 +18,11 @@
 4. [Concept Negation with ConText](https://www.youtube.com/watch?v=-YxyxE4qP4E)
 5. [Clinical Information Extraction](https://www.youtube.com/watch?v=EVLPi777wW4)
 
-Tutorial on Entity Linking (Speaker: Laura Dietz) https://www.youtube.com/watch?v=CBvE3BNErgE
+[Tutorial on Entity Linking (Speaker: Laura Dietz)] (https://www.youtube.com/watch?v=CBvE3BNErgE)
 
-Training a custom ENTITY LINKING model with spaCy https://www.youtube.com/watch?v=8u57WSXVpmw
+[Training a custom ENTITY LINKING model with spaCy] (https://www.youtube.com/watch?v=8u57WSXVpmw)
 
-Sofie Van Landeghem: Entity linking functionality in spaCy (spaCy IRL 2019) https://www.youtube.com/watch?v=PW3RJM8tDGo
+[Sofie Van Landeghem: Entity linking functionality in spaCy (spaCy IRL 2019)] (https://www.youtube.com/watch?v=PW3RJM8tDGo)
 
 Named Entity Linking Emerson https://github.com/explosion/projects/tree/v3/tutorials/nel_emerson
 
