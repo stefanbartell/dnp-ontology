@@ -1,8 +1,8 @@
 #### General CS
 
-- [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
+- [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) - provides overview of topics sometimes not covered in CS classes, such the shell and scripting, editors, data, the command line, version control, debugging, metaprogramming, security, and cryptography
 
-#### Spacy. 
+#### Spacy
 - [Main page](https://spacy.io/)
 - [spaCy 101: Everything you need to know](https://spacy.io/usage/spacy-101)
 - [Advanced NLP with spaCy: a free online course](https://course.spacy.io/en/)
