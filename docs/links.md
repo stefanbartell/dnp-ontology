@@ -4,11 +4,12 @@
 
 #### Spacy
 - [Main page](https://spacy.io/)
-- [spaCy 101: Everything you need to know](https://spacy.io/usage/spacy-101)
-- [Advanced NLP with spaCy: a free online course](https://course.spacy.io/en/)
-- [INTRODUCTION TO SPACY 3: A Free Course for Beginners](http://spacy.pythonhumanities.com/intro.html)
-- [Natural Language Processing with spaCy & Python - Course for Beginners](https://www.youtube.com/watch?v=dIUTsFT2MeQ)
-- [How to Use spaCy's EntityRuler (Named Entity Recognition for DH 04 | Part 01)](https://www.youtube.com/watch?v=wpyCzodvO3A)
+- [spaCy 101: Everything you need to know](https://spacy.io/usage/spacy-101) - an overview of the basic functionalities of spaCy
+- [Advanced NLP with spaCy: a free online course](https://course.spacy.io/en/) - a course covering functionalities of spaCy including Finding words, phrases, names and concepts, Large-scale data analysis, Processing Pipelines, and Training a neural network model
+- [INTRODUCTION TO SPACY 3: A Free Course for Beginners](http://spacy.pythonhumanities.com/intro.html) - a course on the functionalities of spaCy including linguistic annotations, word vectors, pipelines, EntityRuler, Matcher, and RegEx
+- [Natural Language Processing with spaCy & Python - Course for Beginners](https://www.youtube.com/watch?v=dIUTsFT2MeQ) - a video tutorial on spaCy covering topics similar to the above free course for beginners
+- [How to Use spaCy's EntityRuler (Named Entity Recognition for DH 04 | Part 01)](https://www.youtube.com/watch?v=wpyCzodvO3A) - an overview of the spaCy EntityRuler
+- [How to Use spaCy to Create an NER training set (Named Entity Recognition for DH 04 | Part 02)](https://www.youtube.com/watch?v=YBRF7tq1V-Q) - an overview of creation of a NER training set in spaCy
 
 #### Applying NLP to Clinical Text
 
