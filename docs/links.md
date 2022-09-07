@@ -1,26 +1,22 @@
-The Missing Semester of Your CS Education https://missing.csail.mit.edu/
+#### General CS
 
-Spacy main page https://spacy.io/
+- [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 
-spaCy 101: Everything you need to know https://spacy.io/usage/spacy-101
+#### Spacy. 
+- [Main page](https://spacy.io/)
+- [spaCy 101: Everything you need to know](https://spacy.io/usage/spacy-101)
+- [Advanced NLP with spaCy: a free online course](https://course.spacy.io/en/)
+- [INTRODUCTION TO SPACY 3: A Free Course for Beginners](http://spacy.pythonhumanities.com/intro.html)
+- [Natural Language Processing with spaCy & Python - Course for Beginners](https://www.youtube.com/watch?v=dIUTsFT2MeQ)
+- [How to Use spaCy's EntityRuler (Named Entity Recognition for DH 04 | Part 01)](https://www.youtube.com/watch?v=wpyCzodvO3A)
 
-Advanced NLP with spaCy: a free online course https://course.spacy.io/en/
-
-INTRODUCTION TO SPACY 3: A Free Course for Beginners http://spacy.pythonhumanities.com/intro.html
-
-Natural Language Processing with spaCy & Python - Course for Beginners https://www.youtube.com/watch?v=dIUTsFT2MeQ
-
-How to Use spaCy's EntityRuler (Named Entity Recognition for DH 04 | Part 01) https://www.youtube.com/watch?v=wpyCzodvO3A
-
-Week 11: Clinical NLP Notebook #1 - Intro to spaCy https://www.youtube.com/watch?v=wsAJpTyE6OY
-
-Week 11: Clinical NLP Notebook #2 - Pattern Matching with medspaCy https://www.youtube.com/watch?v=ymON0qXbbdw
-
-Week 11: Clinical NLP Notebook #3: Statistical NLP https://www.youtube.com/watch?v=kKqesjURq60
-
-Week 11: Clinical NLP Notebook #4: Concept Negation with ConText https://www.youtube.com/watch?v=-YxyxE4qP4E
-
-Week 11: Clinical NLP Homework - Clinical Information Extraction https://www.youtube.com/watch?v=EVLPi777wW4
+#### Applying NLP to Clinical Text
+##### Clinical NLP Notebook 
+1. [Intro to SpaCy](https://www.youtube.com/watch?v=wsAJpTyE6OY)
+2. [#2:Pattern Matching with medspaCy](https://www.youtube.com/watch?v=ymON0qXbbdw)
+3. [Statistical NLP](https://www.youtube.com/watch?v=kKqesjURq60)
+4. [Concept Negation with ConText](https://www.youtube.com/watch?v=-YxyxE4qP4E)
+5. [Clinical Information Extraction](https://www.youtube.com/watch?v=EVLPi777wW4)
 
 Tutorial on Entity Linking (Speaker: Laura Dietz) https://www.youtube.com/watch?v=CBvE3BNErgE
 
@@ -36,7 +32,8 @@ Medical natural language processing https://www.youtube.com/watch?v=oyhpIWa9w1Y
 
 Mark Neumann: ScispaCy: A spaCy pipeline & models for scientific & biomedical text (spaCy IRL 2019) https://www.youtube.com/watch?v=2_HSKDALwuw
 
-New Protégé Pizza Tutorial https://www.michaeldebellis.com/post/new-protege-pizza-tutorial
+#### Protégé
+- [New Protégé Pizza Tutorial](https://www.michaeldebellis.com/post/new-protege-pizza-tutorial)
 
 Protege Tutorial - exercise 1 to 15 https://www.youtube.com/watch?v=1wVeD2PutOA
 
@@ -56,4 +53,6 @@ Owlready2 Managing ontologies https://owlready2.readthedocs.io/en/latest/onto.ht
 
 Owlready2 Mixing Python and OWL https://owlready2.readthedocs.io/en/latest/mixing_python_owl.html
 
-Chemical Entities of Biological Interest (ChEBI) https://www.ebi.ac.uk/chebi/
+#### Online Ontologies
+
+- Chemical Entities of Biological Interest (ChEBI) https://www.ebi.ac.uk/chebi/
