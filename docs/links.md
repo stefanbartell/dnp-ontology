@@ -8,6 +8,17 @@
 - [Advanced NLP with spaCy: a free online course](https://course.spacy.io/en/) - a course covering functionalities of spaCy including Finding words, phrases, names and concepts, Large-scale data analysis, Processing Pipelines, and Training a neural network model
 - [INTRODUCTION TO SPACY 3: A Free Course for Beginners](http://spacy.pythonhumanities.com/intro.html) - a course on the functionalities of spaCy including linguistic annotations, word vectors, pipelines, EntityRuler, Matcher, and RegEx
 - [Natural Language Processing with spaCy & Python - Course for Beginners](https://www.youtube.com/watch?v=dIUTsFT2MeQ) - a video tutorial on spaCy covering topics similar to the above free course for beginners
+- [SPACY v3: State-of-the-art NLP from Prototype to Production](https://www.youtube.com/watch?v=9k_EfV7Cns0)
+- [Named Entity Recognition (NER): NLP Tutorial For Beginners - 12](https://www.youtube.com/watch?v=2XUhKpH0p4M)
+- [Spacy - Named Entity Recognition and Pipelines](https://www.youtube.com/watch?v=b1JKXkfy1ko)
+- [SPACY v3: Custom trainable relation extraction component](https://www.youtube.com/watch?v=8HL-Ap5_Axo)
+##### Intro to NLP with spaCy: Detecting programming languages
+1. [Data exploration](https://www.youtube.com/watch?v=WnGPv6HnBok)
+2. [Rule-based matching](https://www.youtube.com/watch?v=KL4-Mpgbahw)
+3. [Evaluation](https://www.youtube.com/watch?v=4V0JDdohxAk)
+4. [Named Entity Recognition](https://www.youtube.com/watch?v=IqOJU1-_Fi0)
+5. [Rules vs. Machine Learning](https://www.youtube.com/watch?v=f4sqeLRzkPg)
+6. [Moving to spaCy v3](https://www.youtube.com/watch?v=k77RrmMaKEI)
 
 ##### Course on NER in spaCy for the Digital Humanities
 1.  [Introduction to Named Entity Recognition (NER for DH 01)](https://www.youtube.com/watch?v=E9h8qVm2uNY)
@@ -41,6 +52,7 @@
 3. [Statistical NLP](https://www.youtube.com/watch?v=kKqesjURq60)
 4. [Concept Negation with ConText](https://www.youtube.com/watch?v=-YxyxE4qP4E)
 5. [Clinical Information Extraction](https://www.youtube.com/watch?v=EVLPi777wW4)
+6. [Custom NER (Disease) in clinical text with spaCy 2.0 in Python](https://www.youtube.com/watch?v=DxLcMI-EMYI)
 
 #### Entity Linking
 - [Tutorial on Entity Linking (Speaker: Laura Dietz)](https://www.youtube.com/watch?v=CBvE3BNErgE)
