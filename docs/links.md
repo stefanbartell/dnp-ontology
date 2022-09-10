@@ -12,6 +12,9 @@
 - [Named Entity Recognition (NER): NLP Tutorial For Beginners - 12](https://www.youtube.com/watch?v=2XUhKpH0p4M)
 - [Spacy - Named Entity Recognition and Pipelines](https://www.youtube.com/watch?v=b1JKXkfy1ko)
 - [SPACY v3: Custom trainable relation extraction component](https://www.youtube.com/watch?v=8HL-Ap5_Axo)
+- [SPACY'S ENTITY RECOGNITION MODEL: incremental parsing with Bloom embeddings & residual CNNs](https://www.youtube.com/watch?v=sqDHBH9IjRU)
+- [https://www.youtube.com/watch?v=THduWAnG97k](https://www.youtube.com/watch?v=THduWAnG97k)
+
 ##### Intro to NLP with spaCy: Detecting programming languages
 1. [Data exploration](https://www.youtube.com/watch?v=WnGPv6HnBok)
 2. [Rule-based matching](https://www.youtube.com/watch?v=KL4-Mpgbahw)
