@@ -42,12 +42,16 @@
 16. [Precision vs. Recall and Adding PERSON to Holocaust NER Pipeline (Named Entity Recognition DH 09.06)](https://www.youtube.com/watch?v=-321RJ_Rna8) - working with precision vs. recall and adding PERSON to a NER pipeline
 17. [Finalizing the Holocaust NER Pipeline (Named Entity Recognition for DH 09.07)](https://www.youtube.com/watch?v=MYs0W2fPxSo)
 18. [Classical Latin Named Entity Recognition (NER for DH 10.01)](https://www.youtube.com/watch?v=zywMBYmV6Ew)
+19. [Adding ENT_TYPE patterns into an EntityRuler in spaCy](https://www.youtube.com/watch?v=mDiC6at1TlE)
 
 #### Applying NLP to Clinical Text
 
 - [Clinical Natural Language Processing – Challenges, Tasks and Datasets](https://www.youtube.com/watch?v=yrN8VqkCWWc)
 - [Medical natural language processing](https://www.youtube.com/watch?v=oyhpIWa9w1Y)
 - [Mark Neumann: ScispaCy: A spaCy pipeline & models for scientific & biomedical text (spaCy IRL 2019)](https://www.youtube.com/watch?v=2_HSKDALwuw)
+- [Name Entity recognition of medical terms using Spacy NLP Model](https://www.youtube.com/watch?v=_xhvbHuTcfE)
+- [Med7: A Clinical Named Entity Recognition Model | Paper Explained](https://www.youtube.com/watch?v=PTu89JoxBTw)
+- [Custom NER (Disease) in clinical text with spaCy v3 Transformers in Python](https://www.youtube.com/watch?v=Nv3TqzT2RLI)
 
 ##### Clinical NLP Notebook 
 1. [Intro to SpaCy](https://www.youtube.com/watch?v=wsAJpTyE6OY)
