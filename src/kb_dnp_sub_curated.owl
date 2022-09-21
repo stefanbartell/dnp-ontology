@@ -1,0 +1,2482 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://test.org/onto.owl"
+         xmlns="http://test.org/onto.owl#">
+
+<owl:Ontology rdf:about="http://test.org/onto.owl"/>
+
+<owl:ObjectProperty rdf:about="#is_instance_of">
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#is_label_for_chemical_substance">
+  <rdfs:domain rdf:resource="#chemical_substance_label"/>
+  <rdfs:range rdf:resource="#chemical_substance"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#generically_dependent_continuant">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#chemical_substance">
+  <rdfs:subClassOf rdf:resource="#generically_dependent_continuant"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#generically_dependent_continuant"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#chemical_substance_label">
+  <rdfs:subClassOf rdf:resource="#generically_dependent_continuant"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#generically_dependent_continuant"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#alkaloid_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#alpha_adrenergic_antagonist_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#amino_acid_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#anabolic_steroid_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#anti_inflammatory_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#antiestrogen_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#antiestrogenic_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#antihistamine_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#aromatase_inhibitor_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#beta_adrengenic_antagonist_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#depressant_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#flavonoid_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#growth_hormone_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#growth_hormone_secretagogue_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#mineral_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#phenethylamine_derivative_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#selective_androgen_receptor_modulator_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#stack_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#stimulant_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#weightloss_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#piperine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#alkaloid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#alkaloid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#piperine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#piperine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#yohimbe_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#alkaloid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#alkaloid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#yohimbine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#yohimbe_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#alpha_adrenergic_antagonist_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#alpha_adrenergic_antagonist_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#alpha_adrenergic_antagonist_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#alpha_adrenergic_antagonist_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#alpha_adrenergic_antagonist_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#alpha_lipoic_acid_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#amino_acid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#amino_acid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ala_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ala_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#branched_chain_amino_acid_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#amino_acid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#amino_acid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#bcaa_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#bcaa_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#creatine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#amino_acid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#amino_acid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#creatine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#creatine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#l_carnitine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#amino_acid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#amino_acid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#l_carnitine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#l_carnitine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#n_acetylcysteine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#amino_acid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#amino_acid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#n_acetylcysteine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#n_acetylcysteine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#nac_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#nac_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#taurine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#amino_acid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#amino_acid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#taurine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#taurine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#anastrazole_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anabolic_steroid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anabolic_steroid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#arimidex_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#arimidex_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#helladrol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anabolic_steroid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anabolic_steroid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#helladrol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#helladrol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#insulin_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anabolic_steroid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anabolic_steroid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#insulin_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#insulin_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#insulin_like_growth_factor_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anabolic_steroid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anabolic_steroid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#igf_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#igf_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#masteron_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anabolic_steroid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anabolic_steroid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#masteron_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#masteron_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#mesterolone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anabolic_steroid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anabolic_steroid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#mesterolone_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#mesterolone_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#methylstenbolone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anabolic_steroid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anabolic_steroid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#methylstenbolone_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#methylstenbolone_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#nandrolone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anabolic_steroid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anabolic_steroid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#deca_durabolin_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#deca_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#oxandrolone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anabolic_steroid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anabolic_steroid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#avanar_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#avanar_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#stanozolol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anabolic_steroid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anabolic_steroid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#stanozolol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#stanozolol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#testosterone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anabolic_steroid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anabolic_steroid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#testosterone_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#testosterone_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#tst_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#trenbolone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anabolic_steroid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anabolic_steroid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#tren_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#tren_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#trenbolone_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#trenbolone_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#winstrol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anabolic_steroid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anabolic_steroid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#winny_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#winny_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#aspirin_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#anti_inflammatory_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#anti_inflammatory_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#aspirin_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#aspirin_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#clomiphene_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#antiestrogen_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#antiestrogen_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#clomiphene_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#clomiphene_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#tamoxifen_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#antiestrogen_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#antiestrogen_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#tamoxifen_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#tamoxifen_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#human_chorionic_gonadotropin_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#antiestrogenic_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#antiestrogenic_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#hcg_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#hcg_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#claritin_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#antihistamine_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#antihistamine_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#claritin_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#claritin_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#diphenhydramine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#antihistamine_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#antihistamine_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#diphenhydramine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#diphenhydramine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#fexofenadine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#antihistamine_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#antihistamine_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#fexofenadine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#fexofenadine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ketotifen_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#antihistamine_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#antihistamine_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ketotifen_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ketotifen_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#exemestane_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#aromatase_inhibitor_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#aromatase_inhibitor_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#exemestane_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#exemestane_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#albuterol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#beta_adrengenic_antagonist_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#beta_adrengenic_antagonist_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#albuterol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#albuterol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#beta_adrengenic_antagonist_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#beta_adrengenic_antagonist_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#beta_adrengenic_antagonist_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#beta_adrengenic_antagonist_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#beta_adrenergic_antagonist_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#clenbuterol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#beta_adrengenic_antagonist_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#beta_adrengenic_antagonist_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#clen_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#clen_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#clenbuterol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#clenbuterol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#alcohol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#depressant_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#depressant_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#alcohol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#alcohol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#booze_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#booze_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#etoh_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#etoh_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ethanol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ethanol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#quercetin_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#flavonoid_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#flavonoid_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#quercetin_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#quercetin_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#growth_hormone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#growth_hormone_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#growth_hormone_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#growth_hormone_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#gh_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#growth_hormone_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ibutamoren_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#growth_hormone_secretagogue_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#growth_hormone_secretagogue_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ibutamoren_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ibutamoren_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#calcium_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#mineral_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#mineral_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#calcium_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#calcium_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#fish_oil_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#mineral_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#mineral_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#fish_oil_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#fish_oil_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#iron_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#mineral_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#mineral_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#iron_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#iron_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#magnesium_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#mineral_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#mineral_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#magnesium_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#magnesium_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#potassium_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#mineral_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#mineral_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#potassium_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#potassium_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#selenium_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#mineral_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#mineral_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#selenium_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#selenium_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#zinc_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#mineral_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#mineral_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#zinc_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#zinc_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#zn_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#zn_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#three_four_methylenedioxymethamphetamine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#phenethylamine_derivative_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#phenethylamine_derivative_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ecstasy_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ecstasy_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#mdma_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#mdma_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#selective_androgen_receptor_modulator_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#selective_androgen_receptor_modulator_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#selective_androgen_receptor_modulator_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#sarms_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#sarms_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ephedrine_caffeine_aspirin_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#stack_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#stack_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#eca_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#eca_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#zinc_magnesium_aspartate_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#stack_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#stack_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#zma_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#zma_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#caffeine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#stimulant_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#stimulant_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#caffeine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#caffeine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#cocaine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#stimulant_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#stimulant_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#cocaine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#cocaine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ephedrine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#stimulant_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#stimulant_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ephedrine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#ephedrine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#modafinil_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#stimulant_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#stimulant_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#modafinil_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#modafinil_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#nicotine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#stimulant_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#stimulant_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#nicotine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#nicotine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#pyruvate_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#vitamin_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#vitamin_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#pyruvate_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#pyruvate_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_b12_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#vitamin_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#vitamin_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_b12_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_b12_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_b12_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_b12_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_b6_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#vitamin_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#vitamin_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_b6_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_b6_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_b6_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_b6_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_c_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#vitamin_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#vitamin_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_c_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_c_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_c_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_c_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_e_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#vitamin_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#vitamin_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_e_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_e_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_e_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_e_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#dinitrophenol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#weightloss_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#weightloss_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#dnp_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#dnp_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#dinitrophenol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#dinitrophenol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#glycerol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#weightloss_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#weightloss_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#glycerol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#glycerol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#methasterone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#weightloss_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#weightloss_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#methasterone_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#methasterone_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#sibutramine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#weightloss_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#weightloss_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#sibutramine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#sibutramine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#triiodthyronine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#weightloss_group"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#weightloss_group"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#t3_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#t3_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#triiodthyronine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#triiodthyronine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_label"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="#chemical_substance_label"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+
+</rdf:RDF>

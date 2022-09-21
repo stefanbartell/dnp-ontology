@@ -1,0 +1,2073 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://test.org/onto.owl"
+         xmlns="http://test.org/onto.owl#">
+
+<owl:Ontology rdf:about="http://test.org/onto.owl"/>
+
+<owl:ObjectProperty rdf:about="#is_instance_of">
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#chemical_substance">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#symptom">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#is_instance_of"/>
+      <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#chemical_substance_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+</owl:Class>
+
+<owl:Class rdf:about="#chemical_substance_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+</owl:Class>
+
+<owl:Class rdf:about="#chemical_substance_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance"/>
+</owl:Class>
+
+<owl:Class rdf:about="#symptom_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom"/>
+</owl:Class>
+
+<owl:Class rdf:about="#symptom_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom"/>
+</owl:Class>
+
+<owl:Class rdf:about="#symptom_group">
+  <rdfs:subClassOf rdf:resource="#symptom"/>
+</owl:Class>
+
+<owl:Class rdf:about="#alkaloid_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#allergic_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#alpha_adrenergic_antagonist_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#amino_acid_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#anabolic_steroid_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#anti_inflammatory_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#antiestrogen_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#antiestrogenic_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#antihistamine_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#aromatase_inhibitor_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#behavioral_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#beta_adrengenic_antagonist_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cardiovascular_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#death_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#depressant_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#digestive_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#eye_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fatigue_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#flavonoid_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#growth_hormone_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#growth_hormone_secretagogue_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hematologic_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hormonal_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hydration_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#metabolism_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mineral_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#musculoskeletal_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#neurological_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#phenethylamine_derivative_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pulmonary_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#reproductive_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#selective_androgen_receptor_modulator_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#skin_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sleep_issues_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#stack_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#stimulant_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#thermoregulation_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#urine_issue_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#weightloss_group">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#influenza_like_illness_group">
+  <rdfs:subClassOf rdf:resource="#symptom_group"/>
+</owl:Class>
+
+<owl:Class rdf:about="#albuterol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#alcohol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#alpha_lipoic_acid_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#alpha_adrenergic_antagonist_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#anastrazole_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#aspirin_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#beta_adrengenic_antagonist_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#branched_chain_amino_acid_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#caffeine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#calcium_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#claritin_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#clenbuterol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#clomiphene_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cocaine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#creatine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dinitrophenol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#diphenhydramine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ephedrine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ephedrine_caffeine_aspirin_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#exemestane_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fexofenadine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fish_oil_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#glycerol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#growth_hormone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#helladrol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#human_chorionic_gonadotropin_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ibutamoren_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#insulin_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#insulin_like_growth_factor_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#iron_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ketotifen_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#l_carnitine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#magnesium_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#masteron_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mesterolone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#methasterone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#methylstenbolone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#modafinil_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#n_acetylcysteine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nandrolone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nicotine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#oxandrolone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#piperine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#potassium_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pyruvate_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#quercetin_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#selective_androgen_receptor_modulator_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#selenium_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sibutramine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#stanozolol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tamoxifen_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#taurine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#testosterone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#three_four_methylenedioxymethamphetamine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#trenbolone_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#triiodthyronine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_b12_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_b6_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_c_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_e_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#winstrol_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yohimbe_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#zinc_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#zinc_magnesium_aspartate_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ala_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ala_textual_mention">
+  <rdfs:subClassOf rdf:resource="#ala_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#albuterol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#albuterol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#albuterol_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#alcohol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#alcohol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#alcohol_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#alpha_adrenergic_antagonist_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#alpha_adrenergic_antagonist_textual_mention">
+  <rdfs:subClassOf rdf:resource="#alpha_adrenergic_antagonist_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#arimidex_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#arimidex_textual_mention">
+  <rdfs:subClassOf rdf:resource="#arimidex_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#aspirin_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#aspirin_textual_mention">
+  <rdfs:subClassOf rdf:resource="#aspirin_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#avanar_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#avanar_textual_mention">
+  <rdfs:subClassOf rdf:resource="#avanar_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#bcaa_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#bcaa_textual_mention">
+  <rdfs:subClassOf rdf:resource="#bcaa_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#beta_adrengenic_antagonist_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#beta_adrenergic_antagonist_textual_mention">
+  <rdfs:subClassOf rdf:resource="#beta_adrengenic_antagonist_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#booze_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#booze_textual_mention">
+  <rdfs:subClassOf rdf:resource="#booze_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#caffeine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#caffeine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#caffeine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#calcium_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#calcium_textual_mention">
+  <rdfs:subClassOf rdf:resource="#calcium_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#claritin_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#claritin_textual_mention">
+  <rdfs:subClassOf rdf:resource="#claritin_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#clen_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#clen_textual_mention">
+  <rdfs:subClassOf rdf:resource="#clen_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#clenbuterol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#clenbuterol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#clenbuterol_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#clomiphene_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#clomiphene_textual_mention">
+  <rdfs:subClassOf rdf:resource="#clomiphene_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cocaine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cocaine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#cocaine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#creatine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#creatine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#creatine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dnp_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dnp_textual_mention">
+  <rdfs:subClassOf rdf:resource="#dnp_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#deca_durabolin_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#deca_textual_mention">
+  <rdfs:subClassOf rdf:resource="#deca_durabolin_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dinitrophenol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dinitrophenol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#dinitrophenol_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#diphenhydramine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#diphenhydramine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#diphenhydramine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#eca_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#eca_textual_mention">
+  <rdfs:subClassOf rdf:resource="#eca_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ecstasy_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ecstasy_textual_mention">
+  <rdfs:subClassOf rdf:resource="#ecstasy_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ephedrine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ephedrine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#ephedrine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#etoh_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#etoh_textual_mention">
+  <rdfs:subClassOf rdf:resource="#etoh_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ethanol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ethanol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#ethanol_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#exemestane_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#exemestane_textual_mention">
+  <rdfs:subClassOf rdf:resource="#exemestane_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fexofenadine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fexofenadine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#fexofenadine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fish_oil_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fish_oil_textual_mention">
+  <rdfs:subClassOf rdf:resource="#fish_oil_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#glycerol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#glycerol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#glycerol_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#growth_hormone_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#gh_textual_mention">
+  <rdfs:subClassOf rdf:resource="#growth_hormone_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#growth_hormone_textual_mention">
+  <rdfs:subClassOf rdf:resource="#growth_hormone_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#helladrol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#helladrol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#helladrol_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#igf_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#igf_textual_mention">
+  <rdfs:subClassOf rdf:resource="#igf_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ibutamoren_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ibutamoren_textual_mention">
+  <rdfs:subClassOf rdf:resource="#ibutamoren_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#insulin_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#insulin_textual_mention">
+  <rdfs:subClassOf rdf:resource="#insulin_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#iron_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#iron_textual_mention">
+  <rdfs:subClassOf rdf:resource="#iron_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ketotifen_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ketotifen_textual_mention">
+  <rdfs:subClassOf rdf:resource="#ketotifen_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#l_carnitine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#l_carnitine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#l_carnitine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mdma_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mdma_textual_mention">
+  <rdfs:subClassOf rdf:resource="#mdma_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#magnesium_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#magnesium_textual_mention">
+  <rdfs:subClassOf rdf:resource="#magnesium_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#masteron_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#masteron_textual_mention">
+  <rdfs:subClassOf rdf:resource="#masteron_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mesterolone_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mesterolone_textual_mention">
+  <rdfs:subClassOf rdf:resource="#mesterolone_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#methasterone_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#methasterone_textual_mention">
+  <rdfs:subClassOf rdf:resource="#methasterone_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#methylstenbolone_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#methylstenbolone_textual_mention">
+  <rdfs:subClassOf rdf:resource="#methylstenbolone_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#modafinil_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#modafinil_textual_mention">
+  <rdfs:subClassOf rdf:resource="#modafinil_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#n_acetylcysteine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#n_acetylcysteine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#n_acetylcysteine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nac_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nac_textual_mention">
+  <rdfs:subClassOf rdf:resource="#nac_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nicotine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nicotine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#nicotine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#piperine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#piperine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#piperine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#potassium_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#potassium_textual_mention">
+  <rdfs:subClassOf rdf:resource="#potassium_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pyruvate_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pyruvate_textual_mention">
+  <rdfs:subClassOf rdf:resource="#pyruvate_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#quercetin_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#quercetin_textual_mention">
+  <rdfs:subClassOf rdf:resource="#quercetin_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sarms_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sarms_textual_mention">
+  <rdfs:subClassOf rdf:resource="#sarms_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#selenium_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#selenium_textual_mention">
+  <rdfs:subClassOf rdf:resource="#selenium_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sibutramine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sibutramine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#sibutramine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#stanozolol_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#stanozolol_textual_mention">
+  <rdfs:subClassOf rdf:resource="#stanozolol_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#t3_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#t3_textual_mention">
+  <rdfs:subClassOf rdf:resource="#t3_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tamoxifen_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tamoxifen_textual_mention">
+  <rdfs:subClassOf rdf:resource="#tamoxifen_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#taurine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#taurine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#taurine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#testosterone_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#testosterone_textual_mention">
+  <rdfs:subClassOf rdf:resource="#testosterone_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tst_textual_mention">
+  <rdfs:subClassOf rdf:resource="#testosterone_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tren_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tren_textual_mention">
+  <rdfs:subClassOf rdf:resource="#tren_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#trenbolone_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#trenbolone_textual_mention">
+  <rdfs:subClassOf rdf:resource="#trenbolone_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#triiodthyronine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#triiodthyronine_textual_mention">
+  <rdfs:subClassOf rdf:resource="#triiodthyronine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_b12_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_b12_textual_mention">
+  <rdfs:subClassOf rdf:resource="#vit_b12_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_b6_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_b6_textual_mention">
+  <rdfs:subClassOf rdf:resource="#vit_b6_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_c_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_c_textual_mention">
+  <rdfs:subClassOf rdf:resource="#vit_c_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_e_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vit_e_textual_mention">
+  <rdfs:subClassOf rdf:resource="#vit_e_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_b12_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_b12_textual_mention">
+  <rdfs:subClassOf rdf:resource="#vitamin_b12_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_b6_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_b6_textual_mention">
+  <rdfs:subClassOf rdf:resource="#vitamin_b6_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_c_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_c_textual_mention">
+  <rdfs:subClassOf rdf:resource="#vitamin_c_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_e_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vitamin_e_textual_mention">
+  <rdfs:subClassOf rdf:resource="#vitamin_e_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#winny_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#winny_textual_mention">
+  <rdfs:subClassOf rdf:resource="#winny_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yohimbine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yohimbe_textual_mention">
+  <rdfs:subClassOf rdf:resource="#yohimbine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#zma_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#zma_textual_mention">
+  <rdfs:subClassOf rdf:resource="#zma_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#zinc_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#zinc_textual_mention">
+  <rdfs:subClassOf rdf:resource="#zinc_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#zn_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#zn_textual_mention">
+  <rdfs:subClassOf rdf:resource="#zn_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hcg_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#chemical_substance_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hcg_textual_mention">
+  <rdfs:subClassOf rdf:resource="#hcg_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#abnormal_sweating_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#acne_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#allergic_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#anxious_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#bad_mood_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#bloating_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#blurry_vision_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cataracts_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#chest_pain_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#chills_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#concentration_issues_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#confusion_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#constipation_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#constricted_pupils_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#darkened_urine_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#death_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#decreasd_urination_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dehydration_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#diarrhea_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dizzy_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dozzy_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dry_nose_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#epistaxis_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#feeling_tired_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#feeling_hot_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fever_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#flushing_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#gynecocomastia_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#headache_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#heartburn_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hot_flashes_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hypoglyecemia_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#increase_strength_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#increased_libido_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#increased_urination_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#insomnia_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#lethargy_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#malaise_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#muscle_cramps_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#myalgia_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nausea_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nightsweat_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#odd_dreams_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#peripheral_neuropathy_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pruritus_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#rash_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#scleral_icterus_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#shortness_of_breath_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#skin_rash_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sore_throat_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#stomach_ache_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#stuffy_nose_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#suicidality_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sweating_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tachycardia_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#taste_metal_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tingling_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vomiting_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#water_retention_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#weight_loss_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#xeroderma_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yellow_semen_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yellow_stain_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yellow_tint_standardized_mapping_term">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_mapping_term"/>
+</owl:Class>
+
+<owl:Class rdf:about="#acne_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#acne_textual_mention">
+  <rdfs:subClassOf rdf:resource="#acne_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#allergic_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#allergic_textual_mention">
+  <rdfs:subClassOf rdf:resource="#allergic_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#anxious_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#anxious_textual_mention">
+  <rdfs:subClassOf rdf:resource="#anxious_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#bad_mood_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#miserable_mood_textual_mention">
+  <rdfs:subClassOf rdf:resource="#bad_mood_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mood_poor_textual_mention">
+  <rdfs:subClassOf rdf:resource="#bad_mood_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#bloating_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#bloating_textual_mention">
+  <rdfs:subClassOf rdf:resource="#bloating_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#gassy_textual_mention">
+  <rdfs:subClassOf rdf:resource="#bloating_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#blurry_vision_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#blurry_vision_textual_mention">
+  <rdfs:subClassOf rdf:resource="#blurry_vision_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cataracts_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cataracts_textual_mention">
+  <rdfs:subClassOf rdf:resource="#cataracts_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#chest_pain_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#chest_pain_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chest_pain_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#chest_tightness_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chest_pain_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#chills_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#chills_textual_mention">
+  <rdfs:subClassOf rdf:resource="#chills_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#concentration_issues_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#concentration_issues_textual_mention">
+  <rdfs:subClassOf rdf:resource="#concentration_issues_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#confusion_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#confusion_textual_mention">
+  <rdfs:subClassOf rdf:resource="#confusion_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#constipation_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#constipation_textual_mention">
+  <rdfs:subClassOf rdf:resource="#constipation_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#constricted_pupils_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#constricted_pupils_textual_mention">
+  <rdfs:subClassOf rdf:resource="#constricted_pupils_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#darkened_urine_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#urine_dark_color_textual_mention">
+  <rdfs:subClassOf rdf:resource="#darkened_urine_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#death_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#death_textual_mention">
+  <rdfs:subClassOf rdf:resource="#death_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#decreasd_urination_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#decreasd_urination_textual_mention">
+  <rdfs:subClassOf rdf:resource="#decreasd_urination_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dehydration_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dehydrated_textual_mention">
+  <rdfs:subClassOf rdf:resource="#dehydration_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#diaphoresis_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#diaphoresis_textual_mention">
+  <rdfs:subClassOf rdf:resource="#diaphoresis_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#diarrhea_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#diarrhea_textual_mention">
+  <rdfs:subClassOf rdf:resource="#diarrhea_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#loose_stools_textual_mention">
+  <rdfs:subClassOf rdf:resource="#diarrhea_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dizzy_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dizzy_textual_mention">
+  <rdfs:subClassOf rdf:resource="#dizzy_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#light_headed_textual_mention">
+  <rdfs:subClassOf rdf:resource="#dizzy_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dry_mouth_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dry_mouth_textual_mention">
+  <rdfs:subClassOf rdf:resource="#dry_mouth_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mouth_feels_dry_textual_mention">
+  <rdfs:subClassOf rdf:resource="#dry_mouth_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dry_nose_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dry_nose_textual_mention">
+  <rdfs:subClassOf rdf:resource="#dry_nose_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dry_skin_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dry_skin_textual_mention">
+  <rdfs:subClassOf rdf:resource="#dry_skin_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fatigue_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#energy_level_low_textual_mention">
+  <rdfs:subClassOf rdf:resource="#fatigue_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#energy_terrible_textual_mention">
+  <rdfs:subClassOf rdf:resource="#fatigue_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#exhaustion_textual_mention">
+  <rdfs:subClassOf rdf:resource="#fatigue_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fatigue_textual_mention">
+  <rdfs:subClassOf rdf:resource="#fatigue_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fatigued_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#drained_textual_mention">
+  <rdfs:subClassOf rdf:resource="#fatigued_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#exhausted_textual_mention">
+  <rdfs:subClassOf rdf:resource="#fatigued_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#gassed_textual_mention">
+  <rdfs:subClassOf rdf:resource="#fatigued_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tired_textual_mention">
+  <rdfs:subClassOf rdf:resource="#fatigued_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#feeling_hot_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#heat_textual_mention">
+  <rdfs:subClassOf rdf:resource="#feeling_hot_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hot_textual_mention">
+  <rdfs:subClassOf rdf:resource="#feeling_hot_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#overheating_textual_mention">
+  <rdfs:subClassOf rdf:resource="#feeling_hot_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fever_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#elevated_body_temperature_textual_mention">
+  <rdfs:subClassOf rdf:resource="#fever_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fever_textual_mention">
+  <rdfs:subClassOf rdf:resource="#fever_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#flushing_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#flushing_textual_mention">
+  <rdfs:subClassOf rdf:resource="#flushing_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#gynecocomastia_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#gyno_textual_mention">
+  <rdfs:subClassOf rdf:resource="#gynecocomastia_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#headache_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#headache_textual_mention">
+  <rdfs:subClassOf rdf:resource="#headache_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#heartburn_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#acid_reflux_textual_mention">
+  <rdfs:subClassOf rdf:resource="#heartburn_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#heartburn_textual_mention">
+  <rdfs:subClassOf rdf:resource="#heartburn_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hives_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hives_textual_mention">
+  <rdfs:subClassOf rdf:resource="#hives_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hot_flashes_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hot_flashes_textual_mention">
+  <rdfs:subClassOf rdf:resource="#hot_flashes_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hypolycemia_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hypoglycemia_textual_mention">
+  <rdfs:subClassOf rdf:resource="#hypolycemia_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#increase_strength_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#increase_strength_textual_mention">
+  <rdfs:subClassOf rdf:resource="#increase_strength_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#increased_libido_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#increased_libido_textual_mention">
+  <rdfs:subClassOf rdf:resource="#increased_libido_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#increased_urination_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#increased_urination_textual_mention">
+  <rdfs:subClassOf rdf:resource="#increased_urination_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#increasing_heart_rate_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#elevated_heart_rate_textual_mention">
+  <rdfs:subClassOf rdf:resource="#increasing_heart_rate_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#heart_beating_faster_textual_mention">
+  <rdfs:subClassOf rdf:resource="#increasing_heart_rate_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#heart_rate_increases_textual_mention">
+  <rdfs:subClassOf rdf:resource="#increasing_heart_rate_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#increase_heart_beat_textual_mention">
+  <rdfs:subClassOf rdf:resource="#increasing_heart_rate_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#rapid_pulse_textual_mention">
+  <rdfs:subClassOf rdf:resource="#increasing_heart_rate_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tachycardia_textual_mention">
+  <rdfs:subClassOf rdf:resource="#increasing_heart_rate_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#insomnia_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#insomnia_textual_mention">
+  <rdfs:subClassOf rdf:resource="#insomnia_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#lack_sleep_textual_mention">
+  <rdfs:subClassOf rdf:resource="#insomnia_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#shitty_night_sleeps_textual_mention">
+  <rdfs:subClassOf rdf:resource="#insomnia_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sleeping_miserable_textual_mention">
+  <rdfs:subClassOf rdf:resource="#insomnia_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#struggling_sleep_textual_mention">
+  <rdfs:subClassOf rdf:resource="#insomnia_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#unable_sleep_textual_mention">
+  <rdfs:subClassOf rdf:resource="#insomnia_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#itching_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#itching_textual_mention">
+  <rdfs:subClassOf rdf:resource="#itching_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#lethargy_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#lethargic_textual_mention">
+  <rdfs:subClassOf rdf:resource="#lethargy_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#low_blood_sugar_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#low_blood_glucose_textual_mention">
+  <rdfs:subClassOf rdf:resource="#low_blood_sugar_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#low_sugar_level_textual_mention">
+  <rdfs:subClassOf rdf:resource="#low_blood_sugar_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#malaise_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#discomfort_textual_mention">
+  <rdfs:subClassOf rdf:resource="#malaise_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#feel_shit_textual_mention">
+  <rdfs:subClassOf rdf:resource="#malaise_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#uncomfortable_textual_mention">
+  <rdfs:subClassOf rdf:resource="#malaise_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#muscle_cramps_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cramps_textual_mention">
+  <rdfs:subClassOf rdf:resource="#muscle_cramps_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#myalgia_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#myalgia_textual_mention">
+  <rdfs:subClassOf rdf:resource="#myalgia_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nausea_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nausea_textual_mention">
+  <rdfs:subClassOf rdf:resource="#nausea_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nightsweat_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#drenched_sheets_textual_mention">
+  <rdfs:subClassOf rdf:resource="#nightsweat_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nightsweats_textual_mention">
+  <rdfs:subClassOf rdf:resource="#nightsweat_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#soaked_sheets_textual_mention">
+  <rdfs:subClassOf rdf:resource="#nightsweat_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nose_bleed_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#bloody_noses_textual_mention">
+  <rdfs:subClassOf rdf:resource="#nose_bleed_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#odd_dreams_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#funky_dreams_textual_mention">
+  <rdfs:subClassOf rdf:resource="#odd_dreams_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nightmares_textual_mention">
+  <rdfs:subClassOf rdf:resource="#odd_dreams_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#peripheral_neuropathy_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#numbness_textual_mention">
+  <rdfs:subClassOf rdf:resource="#peripheral_neuropathy_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#peripheral_neuropathy_textual_mention">
+  <rdfs:subClassOf rdf:resource="#peripheral_neuropathy_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#rash_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#rash_textual_mention">
+  <rdfs:subClassOf rdf:resource="#rash_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#scleral_icterus_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#eyes_yellow_textual_mention">
+  <rdfs:subClassOf rdf:resource="#scleral_icterus_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yellow_eyes_textual_mention">
+  <rdfs:subClassOf rdf:resource="#scleral_icterus_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#shortness_of_breath_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#shortness_breath_textual_mention">
+  <rdfs:subClassOf rdf:resource="#shortness_of_breath_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#winded_textual_mention">
+  <rdfs:subClassOf rdf:resource="#shortness_of_breath_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sore_throat_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sore_throat_textual_mention">
+  <rdfs:subClassOf rdf:resource="#sore_throat_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#stomach_ache_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#stomach_ache_textual_mention">
+  <rdfs:subClassOf rdf:resource="#stomach_ache_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#stomach_issues_textual_mention">
+  <rdfs:subClassOf rdf:resource="#stomach_ache_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#stuffy_nose_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#nose_stuffed_textual_mention">
+  <rdfs:subClassOf rdf:resource="#stuffy_nose_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#suicidality_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#suicidal_textual_mention">
+  <rdfs:subClassOf rdf:resource="#suicidality_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sweating_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sweating_textual_mention">
+  <rdfs:subClassOf rdf:resource="#sweating_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#taste_metal_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#taste_metal_textual_mention">
+  <rdfs:subClassOf rdf:resource="#taste_metal_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#thirst_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#thirst_textual_mention">
+  <rdfs:subClassOf rdf:resource="#thirst_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tingling_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tingling_textual_mention">
+  <rdfs:subClassOf rdf:resource="#tingling_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vomiting_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vomiting_textual_mention">
+  <rdfs:subClassOf rdf:resource="#vomiting_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#water_retention_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hold_water_textual_mention">
+  <rdfs:subClassOf rdf:resource="#water_retention_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#water_retention_textual_mention">
+  <rdfs:subClassOf rdf:resource="#water_retention_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#weight_loss_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#weight_loss_textual_mention">
+  <rdfs:subClassOf rdf:resource="#weight_loss_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yellow_semen_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#jizz_yellow_textual_mention">
+  <rdfs:subClassOf rdf:resource="#yellow_semen_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sperm_yellow_textual_mention">
+  <rdfs:subClassOf rdf:resource="#yellow_semen_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yellow_cum_textual_mention">
+  <rdfs:subClassOf rdf:resource="#yellow_semen_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yellow_semen_textual_mention">
+  <rdfs:subClassOf rdf:resource="#yellow_semen_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yellow_nut_textual_mention">
+  <rdfs:subClassOf rdf:resource="#yellow_semen_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yellow_stain_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yellow_stain_textual_mention">
+  <rdfs:subClassOf rdf:resource="#yellow_stain_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yellowing_skin_textual_mention">
+  <rdfs:subClassOf rdf:resource="#yellow_stain_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yellow_tint_standardized_textual_label">
+  <rdfs:subClassOf rdf:resource="#symptom_standardized_textual_label"/>
+</owl:Class>
+
+<owl:Class rdf:about="#yellow_tint_textual_mention">
+  <rdfs:subClassOf rdf:resource="#yellow_tint_standardized_textual_label"/>
+</owl:Class>
+
+
+</rdf:RDF>

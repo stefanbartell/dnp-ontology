@@ -1,0 +1,5 @@
+Challenge Question,Expected Answer,Generated Answer,Correct?,Partially Correct?,Percentage Correct
+1,{'benzene'},{'benzene'},1,1,100.0
+2,"{'benzene', 'chemical_substance'}","{'chemical_substance', 'benzene'}",1,1,100.0
+3,"{'benzene', 'has_part.min(1, hydroxyl_group)', 'is_structural_derivative_of.some(benzene)'}","{'benzene', 'structural_derivatives_benzene.is_structural_derivative_of.some(structural_derivatives_benzene.benzene)', 'structural_derivatives_benzene.has_part.min(1, structural_derivatives_benzene.hydroxyl_group)'}",0,1,33.33333333333333
+
