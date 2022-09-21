@@ -1,0 +1,110 @@
+TEXTUAL MENTION,STANDARDIZED TEXTUAL LABEL,STANDARDIZED MAPPING TERM,GROUP
+Myalgia,Myalgia,Myalgia,Musculoskeletal issue
+Fatigue,Fatigue,Feeling Tired,Fatigue issue
+Gassed,Fatigued,Feeling Tired,Fatigue issue
+Exhausted,Fatigued,Feeling Tired,Fatigue issue
+Drained,Fatigued,Feeling Tired,Fatigue issue
+Exhaustion,Fatigue,Feeling Tired,Fatigue issue
+Energy level low,Fatigue,Feeling Tired,Fatigue issue
+Energy terrible,Fatigue,Feeling Tired,Fatigue issue
+Tired,Fatigued,Feeling Tired,Fatigue issue
+Feel Shit,Malaise,Feeling Tired,Fatigue issue
+Uncomfortable,Malaise,Malaise,Fatigue issue
+Discomfort,Malaise,Malaise,Fatigue issue
+Lethargic,Lethargy,Lethargy,Fatigue issue
+Sweating,Sweating,Sweating,Thermoregulation issue
+Diaphoresis,Diaphoresis,Abnormal sweating,Thermoregulation issue
+Hot,Feeling hot,Feeling hot,Thermoregulation issue
+Heat,Feeling hot,Feeling hot,Thermoregulation issue
+Overheating,Feeling hot,Feeling hot,Thermoregulation issue
+Nightsweats,Nightsweat,Nightsweat,Thermoregulation issue
+Drenched Sheets,Nightsweat,Nightsweat,Thermoregulation issue
+Soaked Sheets,Nightsweat,Nightsweat,Thermoregulation issue
+Fever,Fever,Fever,Thermoregulation issue
+Elevated Body Temperature,Fever,Fever,Thermoregulation issue
+Hot flashes,Hot flashes,Hot flashes,Thermoregulation issue
+Chills,Chills,Chills,Thermoregulation issue
+Flushing,Flushing,Flushing,Thermoregulation issue
+Tingling,Tingling,Tingling,Neurological issue
+Peripheral Neuropathy,Peripheral Neuropathy,Peripheral Neuropathy,Neurological issue
+Numbness,Peripheral Neuropathy,Peripheral Neuropathy,Neurological issue
+Headache,Headache,Headache,Neurological issue
+Light headed,Dizzy,Dizzy,Neurological issue
+Dizzy,Dizzy,Dozzy,Neurological issue
+Confusion,Confusion,Confusion,Neurological issue
+Anxious,Anxious,Anxious,Behavioral issue
+Miserable mood,Bad mood,Bad mood,Behavioral issue
+Mood poor,Bad mood,Bad mood,Behavioral issue
+Suicidal,Suicidality,Suicidality,Behavioral issue
+Concentration issues,Concentration issues,Concentration issues,Behavioral issue
+Funky dreams,Odd dreams,Odd dreams,Behavioral issue
+Nightmares,Odd dreams,Odd dreams,Behavioral issue
+Blurry vision,Blurry vision,Blurry vision,Eye issue
+Cataracts,Cataracts,Cataracts,Eye issue
+Constricted pupils,Constricted pupils,Constricted pupils,Eye issue
+Yellow tint,Yellow tint,Yellow tint,Eye issue
+Eyes yellow,Scleral icterus,Scleral icterus,Eye issue
+Yellow eyes,Scleral icterus,Scleral icterus,Eye issue
+Increased urination,Increased urination,Increased urination,Urine issue
+Urine dark color,Darkened urine,Darkened urine,Urine issue
+Decreasd urination,Decreasd urination,Decreasd urination,Urine issue
+Yellow Semen,Yellow semen,Yellow semen,Reproductive issue
+Yellow Cum,Yellow semen,Yellow semen,Reproductive issue
+Sperm yellow,Yellow semen,Yellow semen,Reproductive issue
+Jizz yellow,Yellow semen,Yellow semen,Reproductive issue
+Yellow nut,Yellow semen,Yellow semen,Reproductive issue
+Increased libido,Increased libido,Increased libido,Reproductive issue
+Winded,Shortness of breath,Shortness of breath,Pulmonary issue
+Shortness breath,Shortness of breath,Shortness of breath,Pulmonary issue
+Allergic,Allergic,Allergic,Allergic Issue
+Hives,Hives,Skin Rash,Skin issue
+Rash,Rash,Rash,Skin issue
+Acne,Acne,Acne,Skin issue
+Itching,Itching,Pruritus,Skin issue
+Dry skin,Dry skin,Xeroderma,Skin issue
+Yellow stain,Yellow stain,Yellow stain,Skin issue
+Yellowing skin,Yellow stain,Yellow stain,Skin issue
+Death,Death,Death,Death
+Increase strength,Increase strength,Increase strength,Musculoskeletal issue
+Cramps,Muscle Cramps,Muscle Cramps,Musculoskeletal issue
+Insomnia,Insomnia,Insomnia,Sleep Issues
+Shitty night sleeps,Insomnia,Insomnia,Sleep Issues
+Lack sleep,Insomnia,Insomnia,Sleep Issues
+Sleeping miserable,Insomnia,Insomnia,Sleep Issues
+Unable sleep,Insomnia,Insomnia,Sleep Issues
+Struggling sleep,Insomnia,Insomnia,Sleep Issues
+Thirst,Thirst,Dehydration,Hydration issue
+Dehydrated,Dehydration,Dehydration,Hydration issue
+Dry mouth,Dry mouth,Dehydration,Hydration issue
+Mouth feels dry,Dry mouth,Dehydration,Hydration issue
+Dry nose,Dry nose,Dry nose,Hydration issue
+Water Retention,Water retention,Water retention,Hydration issue
+Hold water,Water retention,Water retention,Hydration issue
+Heartburn,Heartburn,Heartburn,Digestive issue
+Acid reflux,Heartburn,Heartburn,Digestive issue
+Constipation,Constipation,Constipation,Digestive issue
+Diarrhea,Diarrhea,Diarrhea,Digestive issue
+Loose stools,Diarrhea,Diarrhea,Digestive issue
+Bloating,Bloating,Bloating,Digestive issue
+Gassy,Bloating,Bloating,Digestive issue
+Taste metal,Taste metal,Taste metal,Digestive issue
+Stomach ache,Stomach ache,Stomach ache,Digestive issue
+Stomach issues,Stomach ache,Stomach ache,Digestive issue
+Vomiting,Vomiting,Vomiting,Digestive issue
+Nausea,Nausea,Nausea,Digestive issue
+Heart rate increases,Increasing heart rate,Tachycardia,Cardiovascular issue
+Tachycardia,Increasing heart rate,Tachycardia,Cardiovascular issue
+Rapid pulse,Increasing heart rate,Tachycardia,Cardiovascular issue
+Heart beating faster,Increasing heart rate,Tachycardia,Cardiovascular issue
+Elevated heart rate,Increasing heart rate,Tachycardia,Cardiovascular issue
+Increase heart beat,Increasing heart rate,Tachycardia,Cardiovascular issue
+Chest pain,Chest pain,Chest pain,Cardiovascular issue
+Chest tightness,Chest pain,Chest pain,Cardiovascular issue
+Gyno,Gynecocomastia,Gynecocomastia,Hormonal issue
+Sore throat,Sore throat,Sore throat,influenza-like illness
+Nose stuffed,Stuffy nose,Stuffy nose,influenza-like illness
+Bloody noses,Nose bleed,Epistaxis,Hematologic issue
+Hypoglycemia,Hypolycemia,Hypoglyecemia,Metabolism issue
+Low blood glucose,Low blood sugar,Hypoglyecemia,Metabolism issue
+Low sugar level,Low blood sugar,Hypoglyecemia,Metabolism issue
+Weight loss,Weight loss,Weight loss,Metabolism issue

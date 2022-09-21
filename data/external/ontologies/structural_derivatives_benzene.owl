@@ -1,0 +1,399 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#functional_group"/>
+        <rdfs:comment>x has part y in a chemical sense when y is a molecule or functional group that is bonded to the molecule x or is a substituent of x</rdfs:comment>
+        <rdfs:label>has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_structural_derivative -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_structural_derivative">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:comment>x has structural derivative y in a chemical sense when y is a molecule that results from adding substituents to molecule x</rdfs:comment>
+        <rdfs:label>has structural derivative</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
+        <rdfs:comment>x is a structural derivative y in a chemical sense when x is a molecule that results from adding substituents to molecule y</rdfs:comment>
+        <rdfs:label>is structural derivative of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#benzene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#benzene">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#phenyl_group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>ChEBI Definition: A six-carbon aromatic annulene in which each carbon atom donates one of its two 2p electrons into a delocalised π system. A toxic, flammable liquid byproduct of coal distillation, it is used as an industrial solvent. Benzene is a carcinogen that also damages bone marrow and the central nervous system.</rdfs:comment>
+        <rdfs:label>benzene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#chemical_substance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#continuant"/>
+        <rdfs:comment>A chemical substance is a collection of one or more atoms that are bonded together (if there are multiple atoms) in a certain configuration; an atom or  molecule</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical compound</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#continuant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#continuant">
+        <rdfs:comment>BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240</rdfs:comment>
+        <rdfs:label>continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#dinitrophenol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#dinitrophenol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#phenol"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#phenol"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#nitro_group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>ChEBI Definition: Members of the class of nitrophenol carrying two nitro substituents.</rdfs:comment>
+        <rdfs:label>dinitrophenol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#dinitrotoluene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#dinitrotoluene">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#toluene"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#toluene"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#nitro_group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>ChEBI Definition: Any nitrotoluene carrying two nitro substituents.</rdfs:comment>
+        <rdfs:label>dinitrotoluene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#functional_group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#functional_group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#continuant"/>
+        <rdfs:comment>A functional group is a substituent or moiety in a molecule that causes the molecule&apos;s characteristic chemical reactions (Wikipedia); a part of a molecule that is bound to another molecule</rdfs:comment>
+        <rdfs:label>functional group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#hydroxyl_group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#hydroxyl_group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#functional_group"/>
+        <rdfs:comment>An -OH bound to a molecule</rdfs:comment>
+        <rdfs:label>hydroxyl group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#methyl_group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#methyl_group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#functional_group"/>
+        <rdfs:comment>ChEBI Definition: An alkyl group that is the univalent group derived from methane by removal of a hydrogen atom</rdfs:comment>
+        <rdfs:label>methyl group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#nitro_group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#nitro_group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#functional_group"/>
+        <rdfs:comment>An −NO2 bound to a molecule</rdfs:comment>
+        <rdfs:label>nitro group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#nitro_groups_ortho_and_para_to_other_substituent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#nitro_groups_ortho_and_para_to_other_substituent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#nitro_group"/>
+        <rdfs:label>nitro groups ortho and para to other substituent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#phenol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#phenol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#benzene"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#benzene"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#hydroxyl_group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>ChEBI Definition: An organic hydroxy compound that consists of benzene bearing a single hydroxy substituent. The parent of the class of phenols.</rdfs:comment>
+        <rdfs:label>phenol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#phenyl_group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#phenyl_group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#functional_group"/>
+        <rdfs:comment>An aromatic ring -C6H6, benzene, bound to a molecule. Some of the hydrogens may be substituted with other groups.</rdfs:comment>
+        <rdfs:label>phenyl group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#toluene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#toluene">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#benzene"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#benzene"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#methyl_group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>ChEBI Definition: The simplest member of the class toluenes consisting of a benzene core which bears a single methyl substituent.</rdfs:comment>
+        <rdfs:label>toluene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#trinitrophenol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#trinitrophenol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#phenol"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#phenol"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#nitro_group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>ChEBI Reconstructed Definition: Members of the class of nitrophenol carrying three nitro substituents.</rdfs:comment>
+        <rdfs:label>trinitrophenol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#trinitrotoluene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#trinitrotoluene">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#toluene"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#toluene"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#nitro_group"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>ChEBI Reconstructed Definition: Any nitrotoluene carrying three nitro substituents.</rdfs:comment>
+        <rdfs:label>trinitrotoluene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#2,4,6-TNP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#2,4,6-TNP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#trinitrophenol"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#nitro_groups_ortho_and_para_to_other_substituent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#trinitrophenol"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>ChEBI Definition: A C-nitro compound comprising phenol having three nitro substtituents at the 2-, 4- and 6-positions.</rdfs:comment>
+        <rdfs:label>2,4,6-TNP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#2,4,6-TNT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#2,4,6-TNT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#trinitrotoluene"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#nitro_groups_ortho_and_para_to_other_substituent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#trinitrotoluene"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>ChEBI Definition: A trinitrotoluene having the nitro groups at positions 2, 4 and 6</rdfs:comment>
+        <rdfs:label>2,4,6-TNT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#2,4-DNP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#2,4-DNP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#dinitrophenol"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#nitro_groups_ortho_and_para_to_other_substituent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#dinitrophenol"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>ChEBI Definition: A dinitrophenol having the nitro groups at the 2- and 4-positions.</rdfs:comment>
+        <rdfs:label>2,4-DNP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#2,4-DNT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#2,4-DNT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#dinitrotoluene"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#nitro_groups_ortho_and_para_to_other_substituent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#is_structural_derivative_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/stefan/ontologies/2022/6/untitled-ontology-9#dinitrotoluene"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>ChEBI Definition: A dinitrotoluene in which the methyl group is ortho to one of the nitro groups and para to the other. It is the most common isomer of dinitrotoluene.</rdfs:comment>
+        <rdfs:label>2,4-DNT</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

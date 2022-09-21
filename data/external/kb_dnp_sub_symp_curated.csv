@@ -1,0 +1,190 @@
+DOMAIN,TEXTUAL MENTION,STANDARDIZED TEXTUAL LABEL,STANDARDIZED MAPPING TERM,GROUP
+chemical_substance,Dinitrophenol,Dinitrophenol,Dinitrophenol,Weightloss
+chemical_substance,DNP,DNP,Dinitrophenol,Weightloss
+chemical_substance,T3,T3,Triiodthyronine,Weightloss
+chemical_substance,Triiodthyronine,Triiodthyronine,Triiodthyronine,Weightloss
+chemical_substance,Methasterone,Methasterone,Methasterone,Weightloss
+chemical_substance,Glycerol,Glycerol,Glycerol,Weightloss
+chemical_substance,Sibutramine,Sibutramine,Sibutramine,Weightloss
+chemical_substance,Booze,Booze,Alcohol,Depressant
+chemical_substance,EtOH,EtOH,Alcohol,Depressant
+chemical_substance,Ethanol,Ethanol,Alcohol,Depressant
+chemical_substance,Alcohol,Alcohol,Alcohol,Depressant
+chemical_substance,Piperine,Piperine,Piperine,Alkaloid
+chemical_substance,Yohimbe,Yohimbine,Yohimbe,Alkaloid
+chemical_substance,Alpha-adrenergic antagonist,Alpha-adrenergic antagonist,Alpha-adrenergic antagonist,Alpha-adrenergic antagonist
+chemical_substance,Beta-adrenergic antagonist,Beta-adrengenic antagonist,Beta-adrengenic antagonist,Beta-adrengenic antagonist
+chemical_substance,Clen,Clen,Clenbuterol,Beta-adrengenic antagonist
+chemical_substance,Clenbuterol,Clenbuterol,Clenbuterol,Beta-adrengenic antagonist
+chemical_substance,Albuterol,Albuterol,Albuterol,Beta-adrengenic antagonist
+chemical_substance,Tren,Tren,Trenbolone,Anabolic Steroid
+chemical_substance,Trenbolone,Trenbolone,Trenbolone,Anabolic Steroid
+chemical_substance,Insulin,Insulin,Insulin,Anabolic Steroid
+chemical_substance,IGF,IGF,Insulin-like Growth Factor,Anabolic Steroid
+chemical_substance,Methylstenbolone,Methylstenbolone,Methylstenbolone,Anabolic Steroid
+chemical_substance,Tst,Testosterone,Testosterone,Anabolic Steroid
+chemical_substance,Testosterone,Testosterone,Testosterone,Anabolic Steroid
+chemical_substance,Mesterolone,Mesterolone,Mesterolone,Anabolic Steroid
+chemical_substance,Stanozolol,Stanozolol,Stanozolol,Anabolic Steroid
+chemical_substance,Winny,Winny,Winstrol,Anabolic Steroid
+chemical_substance,Masteron,Masteron,Masteron,Anabolic Steroid
+chemical_substance,Helladrol,Helladrol,Helladrol,Anabolic Steroid
+chemical_substance,Arimidex,Arimidex,Anastrazole,Anabolic Steroid
+chemical_substance,SARMs,SARMs,Selective Androgen Receptor Modulator,Selective Androgen Receptor Modulator
+chemical_substance,Deca,Deca Durabolin,Nandrolone,Anabolic Steroid
+chemical_substance,Avanar,Avanar,Oxandrolone,Anabolic Steroid
+chemical_substance,ECA,ECA,Ephedrine-Caffeine-Aspirin,Stack
+chemical_substance,Ephedrine,Ephedrine,Ephedrine,Stimulant
+chemical_substance,Caffeine,Caffeine,Caffeine,Stimulant
+chemical_substance,Nicotine,Nicotine,Nicotine,Stimulant
+chemical_substance,Cocaine,Cocaine,Cocaine,Stimulant
+chemical_substance,MDMA,MDMA,Three-Four-Methylenedioxymethamphetamine,Phenethylamine Derivative
+chemical_substance,Ecstasy,Ecstasy,Three-Four-Methylenedioxymethamphetamine,Phenethylamine Derivative
+chemical_substance,Modafinil,Modafinil,Modafinil,Stimulant
+chemical_substance,Aspirin,Aspirin,Aspirin,Anti-inflammatory
+chemical_substance,Vit B6,Vit B6,Vitamin B6,Vitamin
+chemical_substance,Vitamin B6,Vitamin B6,Vitamin B6,Vitamin
+chemical_substance,Vit B12,Vit B12,Vitamin B12,Vitamin
+chemical_substance,Vitamin B12,Vitamin B12,Vitamin B12,Vitamin
+chemical_substance,Vit C,Vit C,Vitamin C,Vitamin
+chemical_substance,Vitamin C,Vitamin C,Vitamin C,Vitamin
+chemical_substance,Vit E,Vit E,Vitamin E,Vitamin
+chemical_substance,Vitamin E,Vitamin E,Vitamin E,Vitamin
+chemical_substance,Pyruvate,Pyruvate,Pyruvate,Vitamin
+chemical_substance,L-Carnitine,L-Carnitine,L-Carnitine,Amino acid
+chemical_substance,ALA,ALA,Alpha-Lipoic Acid,Amino acid
+chemical_substance,Creatine,Creatine,Creatine,Amino acid
+chemical_substance,Taurine,Taurine,Taurine,Amino acid
+chemical_substance,NAC,NAC,N-acetylcysteine,Amino acid
+chemical_substance,N-acetylcysteine,N-acetylcysteine,N-acetylcysteine,Amino acid
+chemical_substance,BCAA,BCAA,Branched-chain amino acid,Amino acid
+chemical_substance,Zn,Zn,Zinc,Mineral
+chemical_substance,Zinc,Zinc,Zinc,Mineral
+chemical_substance,Fish Oil,Fish Oil,Fish Oil,Mineral
+chemical_substance,Magnesium,Magnesium,Magnesium,Mineral
+chemical_substance,Potassium,Potassium,Potassium,Mineral
+chemical_substance,Selenium,Selenium,Selenium,Mineral
+chemical_substance,Calcium,Calcium,Calcium,Mineral
+chemical_substance,Iron,Iron,Iron,Mineral
+chemical_substance,ZMA,ZMA,Zinc-Magnesium-Aspartate,Stack
+chemical_substance,Quercetin,Quercetin,Quercetin,Flavonoid
+chemical_substance,Ibutamoren,Ibutamoren,Ibutamoren,Growth Hormone Secretagogue
+chemical_substance,GH,Growth Hormone,Growth Hormone,Growth Hormone
+chemical_substance,Growth Hormone,Growth Hormone,Growth Hormone,Growth Hormone
+chemical_substance,Fexofenadine,Fexofenadine,Fexofenadine,Antihistamine
+chemical_substance,Claritin,Claritin,Claritin,Antihistamine
+chemical_substance,Diphenhydramine,Diphenhydramine,Diphenhydramine,Antihistamine
+chemical_substance,Ketotifen,Ketotifen,Ketotifen,Antihistamine
+chemical_substance,Exemestane,Exemestane,Exemestane,Aromatase inhibitor
+chemical_substance,Clomiphene,Clomiphene,Clomiphene,Antiestrogen
+chemical_substance,Tamoxifen,Tamoxifen,Tamoxifen,Antiestrogen
+chemical_substance,hCG,hCG,Human chorionic gonadotropin,Antiestrogenic
+symptom,Myalgia,Myalgia,Myalgia,Musculoskeletal issue
+symptom,Fatigue,Fatigue,Feeling Tired,Fatigue issue
+symptom,Gassed,Fatigued,Feeling Tired,Fatigue issue
+symptom,Exhausted,Fatigued,Feeling Tired,Fatigue issue
+symptom,Drained,Fatigued,Feeling Tired,Fatigue issue
+symptom,Exhaustion,Fatigue,Feeling Tired,Fatigue issue
+symptom,Energy level low,Fatigue,Feeling Tired,Fatigue issue
+symptom,Energy terrible,Fatigue,Feeling Tired,Fatigue issue
+symptom,Tired,Fatigued,Feeling Tired,Fatigue issue
+symptom,Feel Shit,Malaise,Feeling Tired,Fatigue issue
+symptom,Uncomfortable,Malaise,Malaise,Fatigue issue
+symptom,Discomfort,Malaise,Malaise,Fatigue issue
+symptom,Lethargic,Lethargy,Lethargy,Fatigue issue
+symptom,Sweating,Sweating,Sweating,Thermoregulation issue
+symptom,Diaphoresis,Diaphoresis,Abnormal sweating,Thermoregulation issue
+symptom,Hot,Feeling hot,Feeling hot,Thermoregulation issue
+symptom,Heat,Feeling hot,Feeling hot,Thermoregulation issue
+symptom,Overheating,Feeling hot,Feeling hot,Thermoregulation issue
+symptom,Nightsweats,Nightsweat,Nightsweat,Thermoregulation issue
+symptom,Drenched Sheets,Nightsweat,Nightsweat,Thermoregulation issue
+symptom,Soaked Sheets,Nightsweat,Nightsweat,Thermoregulation issue
+symptom,Fever,Fever,Fever,Thermoregulation issue
+symptom,Elevated Body Temperature,Fever,Fever,Thermoregulation issue
+symptom,Hot flashes,Hot flashes,Hot flashes,Thermoregulation issue
+symptom,Chills,Chills,Chills,Thermoregulation issue
+symptom,Flushing,Flushing,Flushing,Thermoregulation issue
+symptom,Tingling,Tingling,Tingling,Neurological issue
+symptom,Peripheral Neuropathy,Peripheral Neuropathy,Peripheral Neuropathy,Neurological issue
+symptom,Numbness,Peripheral Neuropathy,Peripheral Neuropathy,Neurological issue
+symptom,Headache,Headache,Headache,Neurological issue
+symptom,Light headed,Dizzy,Dizzy,Neurological issue
+symptom,Dizzy,Dizzy,Dozzy,Neurological issue
+symptom,Confusion,Confusion,Confusion,Neurological issue
+symptom,Anxious,Anxious,Anxious,Behavioral issue
+symptom,Miserable mood,Bad mood,Bad mood,Behavioral issue
+symptom,Mood poor,Bad mood,Bad mood,Behavioral issue
+symptom,Suicidal,Suicidality,Suicidality,Behavioral issue
+symptom,Concentration issues,Concentration issues,Concentration issues,Behavioral issue
+symptom,Funky dreams,Odd dreams,Odd dreams,Behavioral issue
+symptom,Nightmares,Odd dreams,Odd dreams,Behavioral issue
+symptom,Blurry vision,Blurry vision,Blurry vision,Eye issue
+symptom,Cataracts,Cataracts,Cataracts,Eye issue
+symptom,Constricted pupils,Constricted pupils,Constricted pupils,Eye issue
+symptom,Yellow tint,Yellow tint,Yellow tint,Eye issue
+symptom,Eyes yellow,Scleral icterus,Scleral icterus,Eye issue
+symptom,Yellow eyes,Scleral icterus,Scleral icterus,Eye issue
+symptom,Increased urination,Increased urination,Increased urination,Urine issue
+symptom,Urine dark color,Darkened urine,Darkened urine,Urine issue
+symptom,Decreasd urination,Decreasd urination,Decreasd urination,Urine issue
+symptom,Yellow Semen,Yellow semen,Yellow semen,Reproductive issue
+symptom,Yellow Cum,Yellow semen,Yellow semen,Reproductive issue
+symptom,Sperm yellow,Yellow semen,Yellow semen,Reproductive issue
+symptom,Jizz yellow,Yellow semen,Yellow semen,Reproductive issue
+symptom,Yellow nut,Yellow semen,Yellow semen,Reproductive issue
+symptom,Increased libido,Increased libido,Increased libido,Reproductive issue
+symptom,Winded,Shortness of breath,Shortness of breath,Pulmonary issue
+symptom,Shortness breath,Shortness of breath,Shortness of breath,Pulmonary issue
+symptom,Allergic,Allergic,Allergic,Allergic Issue
+symptom,Hives,Hives,Skin Rash,Skin issue
+symptom,Rash,Rash,Rash,Skin issue
+symptom,Acne,Acne,Acne,Skin issue
+symptom,Itching,Itching,Pruritus,Skin issue
+symptom,Dry skin,Dry skin,Xeroderma,Skin issue
+symptom,Yellow stain,Yellow stain,Yellow stain,Skin issue
+symptom,Yellowing skin,Yellow stain,Yellow stain,Skin issue
+symptom,Death,Death,Death,Death
+symptom,Increase strength,Increase strength,Increase strength,Musculoskeletal issue
+symptom,Cramps,Muscle Cramps,Muscle Cramps,Musculoskeletal issue
+symptom,Insomnia,Insomnia,Insomnia,Sleep Issues
+symptom,Shitty night sleeps,Insomnia,Insomnia,Sleep Issues
+symptom,Lack sleep,Insomnia,Insomnia,Sleep Issues
+symptom,Sleeping miserable,Insomnia,Insomnia,Sleep Issues
+symptom,Unable sleep,Insomnia,Insomnia,Sleep Issues
+symptom,Struggling sleep,Insomnia,Insomnia,Sleep Issues
+symptom,Thirst,Thirst,Dehydration,Hydration issue
+symptom,Dehydrated,Dehydration,Dehydration,Hydration issue
+symptom,Dry mouth,Dry mouth,Dehydration,Hydration issue
+symptom,Mouth feels dry,Dry mouth,Dehydration,Hydration issue
+symptom,Dry nose,Dry nose,Dry nose,Hydration issue
+symptom,Water Retention,Water retention,Water retention,Hydration issue
+symptom,Hold water,Water retention,Water retention,Hydration issue
+symptom,Heartburn,Heartburn,Heartburn,Digestive issue
+symptom,Acid reflux,Heartburn,Heartburn,Digestive issue
+symptom,Constipation,Constipation,Constipation,Digestive issue
+symptom,Diarrhea,Diarrhea,Diarrhea,Digestive issue
+symptom,Loose stools,Diarrhea,Diarrhea,Digestive issue
+symptom,Bloating,Bloating,Bloating,Digestive issue
+symptom,Gassy,Bloating,Bloating,Digestive issue
+symptom,Taste metal,Taste metal,Taste metal,Digestive issue
+symptom,Stomach ache,Stomach ache,Stomach ache,Digestive issue
+symptom,Stomach issues,Stomach ache,Stomach ache,Digestive issue
+symptom,Vomiting,Vomiting,Vomiting,Digestive issue
+symptom,Nausea,Nausea,Nausea,Digestive issue
+symptom,Heart rate increases,Increasing heart rate,Tachycardia,Cardiovascular issue
+symptom,Tachycardia,Increasing heart rate,Tachycardia,Cardiovascular issue
+symptom,Rapid pulse,Increasing heart rate,Tachycardia,Cardiovascular issue
+symptom,Heart beating faster,Increasing heart rate,Tachycardia,Cardiovascular issue
+symptom,Elevated heart rate,Increasing heart rate,Tachycardia,Cardiovascular issue
+symptom,Increase heart beat,Increasing heart rate,Tachycardia,Cardiovascular issue
+symptom,Chest pain,Chest pain,Chest pain,Cardiovascular issue
+symptom,Chest tightness,Chest pain,Chest pain,Cardiovascular issue
+symptom,Gyno,Gynecocomastia,Gynecocomastia,Hormonal issue
+symptom,Sore throat,Sore throat,Sore throat,influenza-like illness
+symptom,Nose stuffed,Stuffy nose,Stuffy nose,influenza-like illness
+symptom,Bloody noses,Nose bleed,Epistaxis,Hematologic issue
+symptom,Hypoglycemia,Hypolycemia,Hypoglyecemia,Metabolism issue
+symptom,Low blood glucose,Low blood sugar,Hypoglyecemia,Metabolism issue
+symptom,Low sugar level,Low blood sugar,Hypoglyecemia,Metabolism issue
+symptom,Weight loss,Weight loss,Weight loss,Metabolism issue
