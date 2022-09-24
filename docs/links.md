@@ -2,6 +2,15 @@
 
 - [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) - provides overview of topics sometimes not covered in CS classes, such the shell and scripting, editors, data, the command line, version control, debugging, metaprogramming, security, and cryptography
 
+#### Prodigy
+
+- [Training a NAMED ENTITY RECOGNITION MODEL with Prodigy and Transfer Learning](https://www.youtube.com/watch?v=59BKHO_xBPA)
+- [PRODIGY v1.10: Dependencies, relations, audio, video, extended NER and image annotation & lots more](https://www.youtube.com/watch?v=KCrIa538u4I)
+- [TRAINING AN INSULTS CLASSIFIER with Prodigy in ~1 hour](https://www.youtube.com/watch?v=5di0KlKl0fE)
+- [TRAINING A NEW ENTITY TYPE with Prodigy – annotation powered by active learning](https://www.youtube.com/watch?v=l4scwf8KeIA)
+- [FAQ #1: Tips & tricks for NLP, annotation & training with Prodigy and spaCy](https://www.youtube.com/watch?v=tMAU3gLbKII)
+- [Bulk Labelling and Prodigy](https://www.youtube.com/watch?v=gDk7_f3ovIk)
+
 #### spaCy
 - [Main page](https://spacy.io/)
 - [spaCy 101: Everything you need to know](https://spacy.io/usage/spacy-101) - an overview of the basic functionalities of spaCy
