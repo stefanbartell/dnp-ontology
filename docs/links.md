@@ -23,6 +23,7 @@
 - [SPACY v3: Custom trainable relation extraction component](https://www.youtube.com/watch?v=8HL-Ap5_Axo)
 - [SPACY'S ENTITY RECOGNITION MODEL: incremental parsing with Bloom embeddings & residual CNNs](https://www.youtube.com/watch?v=sqDHBH9IjRU)
 - [Advanced NLP with spaCy · A free online course](https://www.youtube.com/watch?v=THduWAnG97k)
+- [Med7: A Clinical Named Entity Recognition Model | Paper Explained](https://www.youtube.com/watch?v=PTu89JoxBTw)
 
 ##### Intro to NLP with spaCy: Detecting programming languages
 1. [Data exploration](https://www.youtube.com/watch?v=WnGPv6HnBok)
